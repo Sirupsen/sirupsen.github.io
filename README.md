@@ -6,4 +6,4 @@ My personal website and blog.
 
 All my blog posts in `_posts` are copyrighted. 
 
-Forked from http://sirupsen.com
+Forked with love from http://sirupsen.com

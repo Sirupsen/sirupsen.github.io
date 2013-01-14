@@ -39,7 +39,7 @@
 
           <li><a href='/'>matthewodette.com</a></li>
           <li><span class="gray">Matthew Odette</span></li>
-          <li><a href="mailto:matthew@matthewodette.com" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Mobile', 'Sidebar Email']);">matthew@matthewodette.com</a></li>
+          <li><a href="mailto:me@matthewodette.com" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Mobile', 'Sidebar Email']);">me@matthewodette.com</a></li>
           <li><a href="http://twitter.com/MatthewOdette" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Mobile', Sidebar Email']);">@MatthewOdette</a></li>
 
         </ul>
@@ -51,19 +51,19 @@
 
           <ul id="social">
             <li>
-              <a href="mailto:matthew@matthewodette.com" class="icon-envelope-alt" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar Email']);" title="Say hi"></a>
+              <a href="mailto:mew@matthewodette.com" class="icon-envelope-alt" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar Email']);" title="Say hi"></a>
             </li>
 
             <li>
-              <a href="http://twitter.com/MatthewOdette" class="icon-twitter" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar Twitter']);" title="You should follow me" style="font-size: 28px;"></a>
+              <a href="http://twitter.com/MatthewOdette" class="icon-twitter" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar Twitter']);" title="Let's follow eachother on Twitter" style="font-size: 28px;"></a>
             </li>
 
             <li>
-              <a href="http://github.com/Matthew-Odette" class="icon-github" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar Github']);" title="I share and fork code here"></a>
+              <a href="http://github.com/Matthew-Odette" class="icon-github" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar Github']);" title="I share and fork code on GitHub"></a>
             </li>
 
             <li>
-              <a href="https://plus.google.com/u/0/114475371508868666033/posts" class="icon-google-plus-sign" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar gPlus']);" title="Feel free to add me on Google Plus"></a>
+              <a href="https://plus.google.com/u/0/114475371508868666033/posts" class="icon-google-plus-sign" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar gPlus']);" title="Don't be a square, circle me on Google Plus"></a>
             </li>
 
             <li>
@@ -82,6 +82,16 @@
       {{ content }}
     </div>
 
-    <script> </script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37661139-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </body>
 </html> 
