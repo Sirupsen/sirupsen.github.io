@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to  Create a Donut Chart with gRaphael
+title: How to Make a Donut Chart with gRaphael
 ---
 
 <div class="intro">
