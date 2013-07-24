@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to  Create a Donut Char with gRaphael
+title: How to  Create a Donut Chart with gRaphael
 ---
 
 <div class="intro">
@@ -49,7 +49,7 @@ Now, we need to draw our donut, if opts.donut === true. Let's place this code ju
         if (donut) series.push(paper.circle(cx, cy, r * donutDiameter).attr({ fill: donutFill, stroke: opts.stroke || donutFill}));
 
 
-Annnnd you're done. The paper.circle is a part of the raphael library and *cx* & *cy* are the center x & y coordinates of the pie chart.  
+Annnnd you're done. The *paper.circle* is a part of the raphael library and *cx* & *cy* are the center x & y coordinates of the pie chart.  
 
 -----------------------------------------------------------------
 
