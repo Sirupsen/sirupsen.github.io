@@ -1,8 +1,5 @@
 ---
 layout: post
-title: Hello World
-------
-layout: post
 title: Installing Node and Karma for AngularJS Testing on Windows
 ---
 
