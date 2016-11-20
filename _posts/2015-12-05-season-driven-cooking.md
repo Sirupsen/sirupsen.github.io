@@ -103,9 +103,7 @@ don't, but they tend to have a part of the produce section dedicated to
 vegetables and fruits grown locally (and therefore, are in season).  Personally,
 I created a spreadsheet to track availability in Ontario.
 
-<iframe src="https://airtable.com/embed/shrvVrHDN6idKdAZN?viewControls=on"
-frameborder="0" onmousewheel="" width="100%" height="533" style="background:
-#fff; border: 1px solid #ccc;"></iframe>
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrEvBABjhDXCOkMe?backgroundColor=pink&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 I order my vegetables directly from local farms. Getting a big basket of
 assorted vegetables is generally not the way to go, as you'll be overwhelmed
