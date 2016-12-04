@@ -23,10 +23,9 @@ another. However, if another project is blocked on these deprecated code-paths,
 piling on may have a large cost.
 
 To solve this problem [Florian Weingarten](https://twitter.com/fw1729) on our
-team introduced what he calls "shitlists". A shitlist is essentially a whitelist
-of deprecated behaviour. Existing deprecated behaviour is OK, and listed. New
-usage of the deprecated API is banned, and fails a test with a well-defined
-error. 
+team introduced what he calls "shitlists": a whitelist of deprecated behaviour.
+Existing deprecated behaviour is OK and whitelisted. New usage of the deprecated
+API is banned and fails a test with a well-defined error.
 
 They come in many forms, but could look like this:
 
