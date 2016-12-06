@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Shitlist Driven Development
-published: false
 ---
 
 Recently the team I work with completed a project to [allow Shopify to run in
@@ -58,7 +57,7 @@ test "no new introductions of legacy code path" do
 end
 ```
 
-Other times you can reach into another API and get a count or list:
+Other times you can reach into another API and get a count or shitlist:
 
 ```ruby
 RedisShitlist = [
@@ -72,11 +71,23 @@ test "no new redis models introduced" do
 end
 ```
 
+Other ways we've used shitlists in the past:
+
+* Make sure that a certain datastore is only read from in a certain context (or
+  not used at all). This would allow for using a read-only slave, or improving
+  resiliency in a certain area.
+* Ensure fallbacks for all uses of a secondary data-store. E.g. if you access
+  sessions in Redis and Redis is down, you should be able to still render the
+  page (i.e. have an empty session fallback).
+* Shitlisting joins between tables that have no business being joined. This is
+  helpful to keep data-models and scope clean, or separating a part of an
+  application. 
+
 If you have a linter for a project, you may be able to encode rules. For example
 you might use [Foodcritic](http://www.foodcritic.io/) for Chef, or
 [Rubocop](https://github.com/bbatsov/rubocop) for Ruby.
 
-Sometimes the shit list is quite complicated, and much more domain-specific.
+Sometimes the shitlist is quite complicated, and much more domain-specific.
 
 Building the shitlist gives the team responsible for it a number of advantages:
 
@@ -94,7 +105,7 @@ Building the shitlist gives the team responsible for it a number of advantages:
 It is important that the shitlist errors are actionable. If you hit the shitlist
 of another team, you need to know what to do next. Ideally the error explains
 exactly what you need to do, and no humans need to talk, but reaching out to the
-owner of the shit-list should always be part of the shitlist.
+owner of the shitlist should always be part of the shitlist.
 
 If you own a shitlist, you must empathize with the problems of everyone who's
 running into problems. If you simply deprecate new behaviour and don't offer an
