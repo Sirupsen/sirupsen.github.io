@@ -40,8 +40,9 @@ def push_job_that_does_crazy_things(klass)
     # Existing deprecated behaviour is called.
   else
     raise Shitlist::Error, <<-EOS
-You're pushing a job that does crazy things. This API has been deprecated in
-this code-base. <team> is actively trying to get rid of this code-path, because
+You're pushing a job that does crazy things. This API has been 
+deprecated in this code-base. <team> is actively trying to get
+rid of this code-path, because
 <reason>. We suggest you instead do <alternative>. If you have questions, please
 ping <team>.
   EOS
@@ -92,7 +93,7 @@ Sometimes the shitlist is quite complicated, and much more domain-specific.
 Building the shitlist gives the team responsible for it a number of advantages:
 
 1. **Strong feedback loop.** The goal is to reduce the `Shitlist` to an empty
-   Array and always raise or remove the cod entirely. Remove a class from the
+   Array and always raise or remove the code entirely. Remove a class from the
    list, fix the code and the tests, celebrate and move on.
 2. **Stopped the bleeding.** New deprecated behaviour is not introduced unless
    the team is contacted or some other action defined in the error is taken.
