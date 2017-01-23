@@ -102,6 +102,10 @@ Building the shitlist gives the team responsible for it a number of advantages:
    can look at how these lists are shrinking. Refactoring for months at a time
    can be exhausting, but if you see that you're making progress with metrics
    moving, it's much more rewarding.
+4. **Enforces a guarantee**. For example, you can have a shitlist that all jobs
+   have a retry mechanism. In that case, you know that you can kill any worker
+   gracefully at any time since the job will retry. Because of 1-3 you know how
+   much work it will take to have this guarantee.
 
 It is important that the shitlist errors are actionable. If you hit the shitlist
 of another team, you need to know what to do next. Ideally the error explains
