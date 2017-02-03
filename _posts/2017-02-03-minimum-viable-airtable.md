@@ -18,7 +18,8 @@ uniquely for me from it. I religiously believe in [Gall's
 law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall.27s_law) that any
 complex, working system _has_ to evolve from a simple system that works. I think
 that Airtable provides a unique opportunity for anyone to create their own
-unique systems. It's no longer just for people who can code.
+unique systems. It's no longer just for people who can code. In Silicon Valley
+lingo: Airtable is democratizing app-building.
 
 While you may have the ambition to turn your idea into a full-blown app, that
 takes hours, days or weeks. Creating an Airtable for your first prototype to get
