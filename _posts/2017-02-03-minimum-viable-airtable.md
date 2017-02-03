@@ -10,11 +10,12 @@ answer is that it is, but in the same way that you can build a house given only
 nails, wood, and a hammer. Airtable gives you screws, cement, brick, and most
 other tools to build a 21st century home.
 
-When I want to organize data, which at the end of the day what most applications
-do, that data is uniquely mine. An app will impose someone else's idiosyncrasies
-on my data. Countless apps for shopping lists exist, but they own my data and
-dictate how I will be using it. I can't evolve a system that works uniquely
-for me from it. I religiously believe in [Gall's law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall.27s_law) that any
+When I want to organize data, which at the end of the day is what most
+applications do, that data is uniquely mine. An app will impose someone else's
+idiosyncrasies on my data. Countless apps for shopping lists exist, but they own
+my data and dictate how I will be using it. I can't evolve a system that works
+uniquely for me from it. I religiously believe in [Gall's
+law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall.27s_law) that any
 complex, working system _has_ to evolve from a simple system that works. I think
 that Airtable provides a unique opportunity for anyone to create their own
 unique systems. It's no longer just for people who can code.
