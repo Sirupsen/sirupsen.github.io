@@ -1,6 +1,6 @@
 ---
 layout: post
-title: &lsqb;Day 0&rsqb; Zero to MVP in 30 Days
+title: Day 0 - Zero to MVP in 30 Days
 ---
 
 <div class="intro">
