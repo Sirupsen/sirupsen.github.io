@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Day 0] Zero to MVP in 30 Days
+title: &lsqb;Day 0&rsqb; Zero to MVP in 30 Days
 ---
 
 <div class="intro">
@@ -18,6 +18,8 @@ I gave it a few week waiting period to make sure the excitement stuck beyond the
 3.  MVP for this challenge means: **a product that is either accepting early beta users or has validation via pre-paying customers.**
 
 I want the flexibility of killing ideas I can’t validate to ensure I have the motivation for making it through at least 30 days of this challenge.
+
+----------------------------------------------------------------
 
 ### What will the blogging for this challenge look like?
 
