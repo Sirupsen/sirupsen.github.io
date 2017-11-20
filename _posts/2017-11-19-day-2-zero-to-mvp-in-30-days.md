@@ -6,7 +6,7 @@ title: Day 2 - Zero to MVP in 30 Days - Beginning validation and app buildout
 <div class="intro">
   Hi there!
 
-  Today’s going to be on the shorter side as I’m still busy emailing folks. Also, I’d love to do a comprehensive post on my early validation attempts in a few days, after I’ve tried a extra channels. 
+  Today’s going to be on the shorter side as I’m still busy emailing folks. Also, I’d love to do a comprehensive post on my early validation attempts in a few days, after I’ve tried a few more channels. 
 </div>
 
 ## The start of validation
