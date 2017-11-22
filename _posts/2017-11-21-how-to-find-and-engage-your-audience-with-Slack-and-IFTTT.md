@@ -9,7 +9,7 @@ title: How to find and engage your audience with Slack and IFTTT
 
 In the “Zero to MVP in 30 Days” challenge I’m currently working on, I’m also starting with an audience of zero. Finding my audience and building rapport is a high priority.
 
-But my time is precious with this challenge. And tabbing over to Hacker News, Reddit, Quora, and other communities my target audience may belong to, to find discussions to jump in on can really take a bite out of my day and distract me from other work that needs to get done.
+But my time is precious during this challenge. And tabbing over to Hacker News, Reddit, Quora, and other communities my target audience may belong to, to find discussions I can jump in on definitely distracts me from other work that needs to get done.
 
 With that in mind, I took a bit of time to set up an automatic stream of curated content to a Slack channel, all for free. Saving me a ton of time, and I hope to pass that saved time onto you.
 
@@ -151,7 +151,7 @@ Twitter has their own set of triggers for IFTTT. Of most interest to us is proba
 
 I’d recommend pulling up [Twitter’s documentation on advanced search](https://support.twitter.com/articles/71577), their section on refining can be combined refine a search to your needs. And test out a pile of queries on Twitter’s home page until you get narrow results that suit you. 
 
-For example just "error messages" is a freakin’ firehouse. But if I search for [filter:images “error message”](https://twitter.com/search?src=typd&q=filter%3Aimages%20%E2%80%9Cerror%20message%E2%80%9D) to only grab Tweets that have an image (hopefully of an error I can chase down) and the exact phrase “error message” I get much better results.
+For example, searching just "error messages" is a freakin’ firehouse. But if I search for [filter:images “error message”](https://twitter.com/search?src=typd&q=filter%3Aimages%20%E2%80%9Cerror%20message%E2%80%9D) to only grab Tweets that have an image (hopefully of an error I can chase down) and the exact phrase “error message” I get much better results.
 
 Once you find terms you like, pipe them to our channel with a new IFTTT applet, using Twitter’s triggers instead of the RSS triggers we’ve been using.
 
@@ -180,12 +180,12 @@ Then we just grab the RSS feed Google gives us for the alert (set this in the "d
 
 Whew! That ran long. So, since we’re mostly leveraging RSS (with Twitter being the exception) why don’t I just use an RSS reader?
 
-* I like IFTTT’s ability to filtering incoming feed items by phrase/keyword
-* I’m never in a feed reader any more, but I do keep slack open
+* I like IFTTT’s ability to filtering incoming feed items by keyword
+* I’m never in a feed reader any more, but I do keep Slack open
 * IFTTT lets us format incoming feeds to all be in a similar format we can easily digest: source name, item title, item link, and item author
-* It sounds silly but **using emojis on the slack comments like a checkmark to indicate I commented on an item**, or an "X" emoji to indicate I want to prune that keyword source to exclude that kind of post really helps pull this together
+* It sounds silly but **using emojis on the slack comments like a checkmark to indicate I commented on an item**, or an "X" emoji to indicate I want to prune that keyword source to exclude that kind of post, really helps pull this together
 
-If you set this up, I hope it saves you a bunch of time by not needing to check in on a pile of sites and blogs, and made you more productive by removing an excuse to spend time on your favorite sites instead of working on your thing.
+If you set this up, I hope it saves you a bunch of time by not needing to check on a pile of sites and blogs, and made you more productive by removing an excuse to spend time on your favorite sites instead of working on your thing.
 
 Should you run into a source you’re having trouble getting to work, drop me a message, I’m happy to take a look.
 
