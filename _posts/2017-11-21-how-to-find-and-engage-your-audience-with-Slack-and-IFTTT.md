@@ -121,11 +121,11 @@ And next we’ll want to expand on of the individual threads so we can format ou
 
 ![](/static/images/curation/Blog_Post_content-curation_Rss_IH_11.png)
 
-Each **{%}** tells Feed43 we want this piece, and each **{\*}** tell Feed43 to "skip until the next character in your query". 
+Each **\{%\}** tells Feed43 we want this piece, and each **\{\*\}** tell Feed43 to "skip until the next character in your query". 
 
-So we find the individual thread’s container in #1 (the red part) then add a **{\*}** to tell Feed43 to skip until we get to the first piece of information we want. That first piece is the href in the anchor element (the link to a thread) and the **{%}** between the href’s double quotes says "we want the contents that would normally be here to be a part of our feed".
+So we find the individual thread’s container in #1 (the red part) then add a **\{\*\}** to tell Feed43 to skip until we get to the first piece of information we want. That first piece is the href in the anchor element (the link to a thread) and the **\{%\}** between the href’s double quotes says "we want the contents that would normally be here to be a part of our feed".
 
-Then we use another **{\*}** To skip until we get to the next part, the thread’s title, and so on.
+Then we use another **\{\*\}** To skip until we get to the next part, the thread’s title, and so on.
 
 Here’s how that will look in Feed43:
 
