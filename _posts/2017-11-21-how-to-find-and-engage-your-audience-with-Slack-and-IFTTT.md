@@ -123,7 +123,7 @@ And next we’ll want to expand on of the individual threads so we can format ou
 
 Each **`{%}`** tells Feed43 we want this piece, and each **`{*}`** tell Feed43 to "skip until the next character in your query". 
 
-So we find the individual thread’s container in #1 (the red part) then add a **`{*}`** to tell Feed43 to skip until we get to the first piece of information we want. That first piece is the href in the anchor element (the link to a thread) and the **\{%\}** between the href’s double quotes says "we want the contents that would normally be here to be a part of our feed".
+So we find the individual thread’s container in #1 (the red part) then add a **`{*}`** to tell Feed43 to skip until we get to the first piece of information we want. That first piece is the href in the anchor element (the link to a thread) and the **`{%}`** between the href’s double quotes says "we want the contents that would normally be here to be a part of our feed".
 
 Then we use another **`{*}`** To skip until we get to the next part, the thread’s title, and so on.
 
@@ -133,7 +133,7 @@ Here’s how that will look in Feed43:
 
 We can test how our part looks by hitting the "extract" button. I suggest, as you build your own feeds, to test each part as you go. Building up pieces of data you want one at a time and hitting “Extract” will help you troubleshoot as you go to make sure you end up pulling out the correct data.
 
-Each \{%\} tag we use in the search query will be assigned a number and can be used when creating the feed. So the link (from the \{%\} place in the href attribute) will be available as \{%1\} and the title of a post will be \{%2\} while the author is \{%3\}.
+Each `{%}` tag we use in the search query will be assigned a number and can be used when creating the feed. So the link (from the `{%}` place in the href attribute) will be available as `{%1}` and the title of a post will be `{%2}` while the author is `{%3}`
 
 Letting us format our feed like like:
 
