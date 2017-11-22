@@ -19,11 +19,11 @@ With that in mind, I took a bit of time to set up an automatic stream of curated
 * New content or comments containing keywords from Hacker News using some community built tools
 * Creating an RSS feed for a site that doesn’t provide a feed, to grab new content that we wouldn’t otherwise be able to subscribe to, like Quora.
 * Twitter searches
-* Using Google Alerts to create more opportunities, like finding blogs accepting guest posts in your topic
+* Using Google Alerts to create more opportunities, like finding blogs accepting guest posts in your niche
 
 **Pre requisites:**
 
-* A [free slack workspace](https://slack.com/create#email) or existing workspace.
+* A [free slack workspace](https://slack.com/create#email) or existing workspace
 * Create a channel in Slack to pipe this feed of content to
 * A [IFTTT](https://ifttt.com) account (**IF** **T**his **T**hen **T**hat is also free)
 
@@ -31,13 +31,13 @@ With that in mind, I took a bit of time to set up an automatic stream of curated
 
 ## Pages that already have RSS feeds
 
-The first thing we’ll want to do for any source you’re interested in tracking is checking to see if they already provide an RSS feed we can tap into. 
+The first thing we’ll want to do for any source you’re interested in tracking is check to see if they already provide an RSS feed we can tap into. 
 
-There’s [browser extensions](https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd/related?hl=en) that can display if a current page you’re viewing has a feed. I opt to just inspect the page’s source and Cmd+F for ".xml" as we’ll see shortly.
+There are [browser extensions](https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjd/related?hl=en) that can display if a page you’re currently viewing has a feed. I opt to just inspect the page’s source and Cmd+F for ".xml" as we’ll see shortly.
 
-**Let’s use Indie Hackers article’s as an example:**
+**Let’s use Indie Hackers articles as an example:**
 
-Indie Hackers is an example of a source that gives us an official RSS feed to work with. For me, Indie Hackers is a great place to find folks who are doing something similar to my Zero to MVP in 30 Days challenge, and the volume of posts isn’t overbearing so I’d like to pipe in all new articles from there.
+Indie Hackers is a source that gives us an official RSS feed to work with. For me, Indie Hackers is a great place to find folks who are doing something similar to my Zero to MVP in 30 Days challenge, and the volume of posts isn’t overbearing so I’d like to pipe in all their new articles.
 
 Let’s go to Indie Hackers and look at Courtland’s source code:
 
@@ -51,11 +51,11 @@ Great! Now let’s head to [IFTTT’s page to create a new applet](https://ifttt
 
 ![](/static/images/curation/04_bonus_curate_gif_01.gif)
 
-Here we can choose to either use any new items from the feed, or only new feed items that contain a certain phrase. We’re going with all updates for this first example.
+Here we can choose to either trigger the applet for all new items from the feed, or only new feed items that contain a certain phrase. We’re going with all updates for this first example.
 
 Let’s paste in the Indie Hacker’s feed and move on to select Post to Slack as the "that" of our new applet.
 
-![](/static/images/curation/04_bonus_curate_gif_01.gif)
+![](/static/images/curation/04_bonus_curate_gif_02.gif)
 
 On this screen we can clean up how the content is being fed to Slack. Here’s the changes I make, but definitely experiment to see what works for you! And click on "Add ingredient" to see what other data from the RSS feed is available to you.
 
