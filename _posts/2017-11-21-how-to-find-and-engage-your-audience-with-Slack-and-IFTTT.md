@@ -123,7 +123,7 @@ And next we’ll want to expand on of the individual threads so we can format ou
 
 Each **{{ "{%"}}}** tells Feed43 we want this piece, and each **`{*}`** tell Feed43 to "skip until the next character in your query". 
 
-So we find the individual thread’s container in #1 (the red part) then add a **`{*}`** to tell Feed43 to skip until we get to the first piece of information we want. That first piece is the href in the anchor element (the link to a thread) and the **{{ "{%"}}}** between the href’s double quotes says "we want the contents that would normally be here to be a part of our feed".
+So we find the individual thread’s container in #1 (the red part) then add a **`{*}`** to tell Feed43 to skip until we get to the first piece of information we want. That first piece is the href in the anchor element (the link to a thread) and the **{{ "{%"}}}** between the href’s double quotes says "we want the contents that would normally be here to be a part of our feed."
 
 Then we use another **`{*}`** To skip until we get to the next part, the thread’s title, and so on.
 
@@ -151,7 +151,7 @@ Twitter has their own set of triggers for IFTTT. Of most interest to us is proba
 
 I’d recommend pulling up [Twitter’s documentation on advanced search](https://support.twitter.com/articles/71577), their section on refining can be combined refine a search to your needs. And test out a pile of queries on Twitter’s home page until you get narrow results that suit you. 
 
-For example just "error messages" is a freakin’ firehouse. But if I search for **\[filter:images “error message**”](https://twitter.com/search?src=typd&q=filter%3Aimages%20%E2%80%9Cerror%20message%E2%80%9D) to only grab Tweets that have an image (hopefully of an error I can chase down) and the exact phrase “error message” I get much better results.
+For example just "error messages" is a freakin’ firehouse. But if I search for [filter:images “error message”](https://twitter.com/search?src=typd&q=filter%3Aimages%20%E2%80%9Cerror%20message%E2%80%9D) to only grab Tweets that have an image (hopefully of an error I can chase down) and the exact phrase “error message” I get much better results.
 
 Once you find terms you like, pipe them to our channel with a new IFTTT applet, using Twitter’s triggers instead of the RSS triggers we’ve been using.
 
