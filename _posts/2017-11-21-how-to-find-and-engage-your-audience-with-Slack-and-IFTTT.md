@@ -13,6 +13,10 @@ But my time is precious during this challenge. And tabbing over to Hacker News, 
 
 With that in mind, I took a bit of time to set up an automatic stream of curated content to a Slack channel, all for free. Saving me a ton of time, and I hope to pass that saved time onto you.
 
+Our goal in this post is for you to have a slack channel resembling:
+
+![](/static/images/curation/Blog_Post_content-curation_bystander_Slack.png)
+
 **In this post we’ll look at setting up content streams from these kinds of channels:**
 
 * New content with your preferred keywords from sources that have RSS feeds like Reddit, StackOverflow, and articles on Indie Hackers.
