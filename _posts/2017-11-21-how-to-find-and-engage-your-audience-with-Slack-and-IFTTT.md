@@ -47,7 +47,7 @@ Let’s go to Indie Hackers and look at Courtland’s source code:
 
 ![](/static/images/curation/Blog_Post_content-curation_Rss_IH_1.png)
 
-And find the link to the feed he provides for us:
+And find the link to the feed he provides there:
 
 ![](/static/images/curation/Blog_Post_content-curation_Rss_IH_2.png)
 
@@ -77,7 +77,7 @@ Some sources that have RSS feeds are a firehouse. StackOverflow and other Stacke
 
 Google is our friend here, if we’re looking to get content out of a large site, chances are [someone else has already tried solving this problem](https://meta.stackexchange.com/questions/5857/rss-feed-for-searches). Shoot! It looks like getting a feed for searches is out. But we can use tags! 
 
-They have a tag called "[custom-error-pages](https://stackoverflow.com/questions/tagged/custom-error-pages)" that looks like something I might want to get in on for my audience. The link to their RSS feed hides at the bottom of their pages:
+They have a tag called "[custom-error-pages](https://stackoverflow.com/questions/tagged/custom-error-pages)" that looks like something I might want to follow for my audience. The link to their RSS feed hides at the bottom of their pages:
 
 ![](/static/images/curation/Blog_Post_content-curation_Rss_IH_7.png)
 
