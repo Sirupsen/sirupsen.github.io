@@ -50,7 +50,7 @@ How will we do that?
 2. Have error messages that work maintain trust instead of degrade it 
 3. Use analytics to help identify and fix new or troublesome error messages efficiently, and have a framework in place for your team to document internally for customer support or improve the error
 
-So what is Bystander.io in this iteration? Remember we’re liking to get the concentrated version of:
+So what is Bystander.io in this iteration? Remember we’re looking to get the concentrated version of:
 
 >Bystander.io a tool to track visual user-facing errors, how much they’re costing you, and a framework with the accompanying analytics to reduce the cost those errors.
 
