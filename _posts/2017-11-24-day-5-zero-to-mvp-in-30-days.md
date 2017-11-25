@@ -13,7 +13,7 @@ title: Day 7 - Zero to MVP in 30 Days - On landing pages and prospecting
 
 ## Quick thoughts on landing pages
 
-I’m currently working on moving from Github pages to a Digital Ocean droplet, to make the switch from iframing my Ship page on Bystander.io to self hosting version 1.0 of our landing page. I’ll also stick [Ghost](https://ghost.org/) on a `/blog` subdirectory to begin posting a few pieces of long form content targeted at Bystander.io’s customers.
+I’m currently working on moving from Github pages to a Digital Ocean droplet, to make the switch from iframing [my Product Hunt Ship page](https://www.producthunt.com/upcoming/bystander-io) on Bystander.io to self hosting version 1.0 of our landing page. I’ll also stick [Ghost](https://ghost.org/) on a `/blog` subdirectory to begin posting a few pieces of long form content targeted at Bystander.io’s customers.
 
 For landing pages, I still opt to self-host since hosting is dirt cheap and the landing-page-as-a-service options are fairly expensive for something I can get done in nearly the same time by grabbing a static template off [Themeforest](https://themeforest.net/).
 
