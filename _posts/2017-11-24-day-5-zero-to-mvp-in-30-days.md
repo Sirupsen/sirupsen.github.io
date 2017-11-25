@@ -35,6 +35,8 @@ If you need inspiration for content on your landing page, I always like to head 
 
 Then after your last sip of whiskey, for real inspiration, you can take a look at [Ask Hacker News posts about landing pages](https://hn.algolia.com/?query=%22ask%20hn%22%20best%20%22landing%20page%22&sort=byPopularity&prefix=false&page=0&dateRange=all&type=story).
 
+Oh! Any before you push the landing page to your hosting, make sure to add all the tracking pixels you're interested in to begin collecting data for ad retargeting right off the bat.
+
 ----------------------
 
 ## Prospecting
