@@ -6,7 +6,7 @@ title: Day 7 - Zero to MVP in 30 Days - On landing pages and prospecting
 <div class="intro">
   Hey there!
 
-  If you’re new to this series, I laid down some ground rules [in day zero](https://hackernoon.com/day-0-zero-to-mvp-in-30-days-31c83db6aadf), and explain the idea for my first project [on day one](https://hackernoon.com/day-1-zero-to-mvp-in-30-days-idea-number-1-18536868e282). I document, a little every day, what I'm working on.
+  If you’re new to this series, I laid down some ground rules <a href="https://hackernoon.com/day-0-zero-to-mvp-in-30-days-31c83db6aadf">in day zero</a>, and explain the idea for my first project <a href="https://hackernoon.com/day-1-zero-to-mvp-in-30-days-idea-number-1-18536868e282">on day one</a>. I document, a little every day, what I'm working on.
 </div>
 
 ------
