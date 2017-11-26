@@ -11,8 +11,6 @@ title: Day 8 - Zero to MVP in 30 Days - Please rip my landing page to shreds
 
 ------
 
-If this is your first time here, you may be interested in [day zero](https://hackernoon.com/day-0-zero-to-mvp-in-30-days-31c83db6aadf) where I lay out ground rules, and [day one](https://hackernoon.com/day-1-zero-to-mvp-in-30-days-idea-number-1-18536868e282) describing my current idea.
-
 **Tonight’s the night!** You all get to see version 1.0 of the [bystander.io](https://bystander.io/) landing page. One note: NGINX and the droplet in general are very much unoptimized. I’ll spend a bit of time on that tomorrow.
 
 As far as content goes, we’re lacking in social proof and testimonials, of course. But those key sections will be added in as soon as I get to a beta with some happy folks using the app. 
