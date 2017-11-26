@@ -46,6 +46,6 @@ That’s all for today, I spent a fair bit of time spent prospecting and putting
 
 Longer term goals, I want to have a pre-order option up by the end of week 2. Pre ordering will likely have a benefit to the tune of saving 50% for the chosen length of the pre-order.
 
-If you take a look [at the landing page](https://bystander.io/) and have any feedback, please, let me know! You can lemail me on from the sidebar.
+If you take a look [at the landing page](https://bystander.io/) and have any feedback, please, let me know! You can email me on from the sidebar.
 
 Cheers!
