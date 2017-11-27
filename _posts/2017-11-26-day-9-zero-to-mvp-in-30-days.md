@@ -21,8 +21,8 @@ So let’s get into it.
 
 First, let me lead up to *why* I’m burning a bit of cash on ad experiments. Today has been pretty lively for a Sunday:
 
-* Chat on [bystander.io](http://bystander.io) is working, I’ve had **3** amazing live chats today with lovely people. Now this may not sound like much. But this is a B2B SaaS landing page that’s been live for less than 24 hours and has no advertising or backlinks other than those related to this little series.
-* I have** 7** new signups for the early access form on the landing page today. These exclude the few signups I’ve been able to battle for via cold outreach.
+* Chat on [bystander.io](http://bystander.io) is working. I’ve had **3** amazing live chats today with lovely people. Now this may not sound like much. But this is a B2B SaaS landing page that’s been live for less than 24 hours and has no advertising or backlinks other than those related to this little series.
+* I have **7** new signups for the early access form on the landing page today. These exclude the few signups I’ve been able to battle for via cold outreach.
 * Traffic to the landing page and stats to this blog continue to grow. While the stats for this series may not mean much in terms of validating Bystander, it sure does mean a lot to me and keeps me incredibly motivated (seriously, thank you to everyone reading and messaging me)
 
 For those curious how this little series documenting my journey has grown on Medium from day zero:
@@ -35,11 +35,11 @@ This budding interest in Bystander gives me the confidence to move a bit farther
 
 My assumptions now, are, a business who makes the leap for a preorder is someone I’m in active communication with. I don’t expect a landing page alone to be able to convert someone into prepaying for a B2B SaaS solution. 
 
-So why ads?
+**So why ads?**
 
 They’re a cheap way for me to test my copy and assumptions at a larger scale than I currently can organically. For trying to get folks to preorder I want to have the best copy and value proposition I can possibly have with my current resources and traffic.
 
-Now, first time ad accounts usually offer bonuses that are quite generous for the scale were working with. I want to keep my spend below 200 dollars here. But LinkedIn for example will give you $50 credit to start with, taking advantage of this and similar bonuses stretches that small testing budget quite a bit farther.
+Now, first time ad accounts usually offer bonuses that are quite generous for the scale were working with. I want to keep my spend below 200 dollars here. But LinkedIn, for example, will give you $50 credit to start with, taking advantage of this and similar bonuses stretches that small testing budget quite a bit farther.
 
 Each campaign on both Facebook and LinkedIn **are both running 3 different ads**.
 
@@ -53,7 +53,7 @@ Here’s an example LinkedIn ad for the User Experience camp:
 
 ![](/static/images/mvp_day9/image_1.png)
 
-I don’t expect conversions in this small run at ads. The scale of my spend is tiny, it’s my first go ad advertising Bystander, and my primary goal is to see if I can pin down a measurable difference on my audience and headlines to help focus my early efforts. 
+I don’t expect conversions in this small run at advertising. The scale of my spend is tiny, it’s my first go ad advertising Bystander, and my primary goal is to see if I can pin down a measurable difference on my audience and headlines to help focus my early efforts. 
 
 Plus, I can’t learn about advertising by just reading, I need to just start. And at the very least, I’m spending a bit of money for your entertainment 😂
 
@@ -73,17 +73,17 @@ So! The stack for this [Bystander](https://bystander.io/)...
 
 **Backend:**
 
-* Node latest stable with [Express](https://expressjs.com/).
-* MongoDB with [Mongoose](http://mongoosejs.com/)
-* [Auth0](http://auth0.com/) for authentication and access control, authentication is something that’s been solved a million times. But working on a solo project, authentication-as-a-service saves me a ton of time. And it let’s me be confident in an otherwise scary space. Their content team is top notch too, if any of that interests you, check out [their blog](https://auth0.com/blog/).
+* **Node** latest stable with **[Express](https://expressjs.com/)**.
+* **MongoDB** with **[Mongoose](http://mongoosejs.com/)**
+* **[Auth0](http://auth0.com/)** for authentication and access control, authentication is something that’s been solved a million times. But working on a solo project, authentication-as-a-service saves me a ton of time. And it let’s me be confident in an otherwise scary space. Their content team is top notch too, if any of that interests you, check out [their blog](https://auth0.com/blog/).
 
 Express+Mongoose+Auth0 let me make APIs with protected endpoints incredibly fast.
 
 **On the frontend:**
 
-* [Angular 5](https://angular.io/), which requires [Typescript](https://www.typescriptlang.org/). I find Typescript an absolute joy to work with. It’s a superset of JS that let’s you develop with JS as a strongly typed language. So, working with Angular in and IDE like [Webstorm](https://www.jetbrains.com/webstorm/) gives you typeahead on all the things and lets you catch compile errors.
-* For a design and component framework, my original plan was to go with [Nebular](http://akveo.com/ngx-admin/#/pages/dashboard), but the screenshots I currently made available actually leverage a [Bootstrap official theme](https://themes.getbootstrap.com/products/dashboard), with components I’ve already sliced down into Angular components/services for a previous project. I’m still tempted by Nebular as it feels more modern, but really, I need to double down and focus on function rather than form.
-* The new (to me!) tech I’m playing with for this project is Redux, although in the form of [NgRx](https://github.com/ngrx/platform) (Angular’s flavor of Redux) NgRx/Redux put your application’s state into a single object. So you get some reallllyyy cool benefits when it comes to debugging. [This talk by Ngrx maintainers](https://www.youtube.com/watch?v=cyaAhXHhxgk) is worth a watch. Plus, even without having an interest in Redux or NgRx, this is the best format I’ve ever seen for two developers presenting a talk. Brandon and Mike did an awesome job on this.
+* **[Angular 5](https://angular.io/)**, which requires [Typescript](https://www.typescriptlang.org/). I find Typescript an absolute joy to work with. It’s a superset of JS that let’s you develop with JS as a strongly typed language. So, working with Angular in and IDE like [Webstorm](https://www.jetbrains.com/webstorm/) gives you typeahead on all the things and lets you catch compile errors.
+* For a design and component framework, my original plan was to go with [Nebular](http://akveo.com/ngx-admin/#/pages/dashboard), but the screenshots I currently made available actually leverage a **[Bootstrap official theme](https://themes.getbootstrap.com/products/dashboard)**, with components I’ve already sliced down into Angular components/services for a previous project. I’m still tempted by Nebular as it feels more modern, but really, I need to double down and focus on function rather than form.
+* The new (to me!) tech I’m playing with for this project is **Redux**, although in the form of **[NgRx](https://github.com/ngrx/platform)** (Angular’s flavor of Redux) NgRx/Redux put your application’s state into a single object. So you get some reallllyyy cool benefits when it comes to debugging. [This talk by Ngrx maintainers](https://www.youtube.com/watch?v=cyaAhXHhxgk) is worth a watch. Plus, even without having an interest in Redux or NgRx, this is the best format I’ve ever seen for two developers presenting a talk. Brandon and Mike did an awesome job on this.
 
 **Hosting Related:**
 
