@@ -15,7 +15,7 @@ title: Day 10 - Zero to MVP in 30 Days - Let's talk pricing
 
 We discussed yesterday that we’re now looking to convince some businesses to part with their cold hard cash, to push this project from "*I’m getting some (awesome!) email subscribers*" to “*Hey, this is actually one step closer to a sustainable business*” 
 
-Some time ago, I stumbled onto a Hacker News post: "[Ask HN: What are some 'must watch' talks?](https://news.ycombinator.com/item?id=13574916)." In that thread, Patrick McKenzie (patio11) offered up this *amazing* MicroConf talk by Jason Cohen. If you have an hour of time available and are interested in pricing, I definitely think Jason’s talk is worth a watch. He’s an engaging speaker and that hour will fly by: [https://vimeo.com/74338272](https://vimeo.com/74338272) 
+Some time ago, I stumbled onto a Hacker News post: "[Ask HN: What are some 'must watch' talks?](https://news.ycombinator.com/item?id=13574916)" In that thread, Patrick McKenzie (patio11) offered up this *amazing* MicroConf talk by Jason Cohen. If you have an hour of time available and are interested in pricing, I definitely think Jason’s talk is worth a watch. He’s an engaging speaker and that hour will fly by: [https://vimeo.com/74338272](https://vimeo.com/74338272) 
 
 I’m subscribing to many of Jason’s strategies when it comes to this early version of pricing for [Bystander.io](https://bystander.io/).
 
@@ -23,7 +23,7 @@ I can only work with napkin math to estimate my costs at this time. But I’ll a
 
 This spreadsheet is quite long, but here’s how simple it looks:
 
-![](/static/images/mvp_day9/day10_image_0.png)
+![](/static/images/day10_image_0.png)
 
 And I’ve found a few that store data similar to what my session tracking will look like (my primary metered "thing") which helps in checking my cost estimates against what a few businesses in a similar space have in production.
 
@@ -33,7 +33,7 @@ Plus, if no one at all thinks your pricing is too high, your price probably isn�
 
 With that said the early pricing iteration looks like:
 
-![](/static/images/mvp_day9/day10_image_1.png)
+![](/static/images/day10_image_1.png)
 
 I still want to add an annual opt-in, which discounts the price by two months. The idea behind annual opt-in is: more money *now* is better than a little more money in the future -- I can turn around apply that larger annual opt-in sum into custom acquisition. 
 
