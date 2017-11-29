@@ -45,5 +45,5 @@ In preparation for tomorrow’s post, if you have an interest in emailing people
 * All that outreach I’m yammering on about, time to validate or find a related pain I can validate with.
 * [The Ship page](https://www.producthunt.com/upcoming/bystander-io) gets promoted tomorrow, which I’m curious about.
 
-Thanks for reading, this turned out quite long! And of course, feel free to email me with any questions or feedback! My email is on the sidebar. And I’ll see you all tomorrow!
+Thank you for reading! And of course, feel free to email me with any questions or feedback! My email is on the sidebar. And I’ll see you all tomorrow!
 
