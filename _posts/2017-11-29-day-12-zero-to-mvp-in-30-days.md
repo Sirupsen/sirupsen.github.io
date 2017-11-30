@@ -44,7 +44,7 @@ This is super simple, I just want to track what I need to get going for now:
 * Notes
 * Social accounts (not pictured)
 
-**So to gather information**, after we define our market, we need to start with a list of companies of which we can then research their teams for desireable prospects. Most markets have directories available. Lucky for us [SaaS1000](http://saas1000.com/) does a ton of the heavy lifting for us.
+**So to gather information**, after we define our market, we need to start with a list of companies of which we can then research their teams for desirable prospects. Most markets have directories available. Lucky for us [SaaS1000](http://saas1000.com/) does a ton of the heavy lifting for us.
 
 Going from your list of companies to finding the right employees to contact is as simple as pulling up the company’s page on LinkedIn and searching by title. In my case, I punch in "customer" or “ux” and decide from that list which level of seniority I want to approach. The position that I choose here is a mix, as I’d like to test the response from varying titles.
 
