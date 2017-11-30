@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day 11 - Zero to MVP in 30 Days - Checking in
+title: Day 12 - Zero to MVP in 30 Days - A look at cold validation
 ---
 
 <div class="intro">
