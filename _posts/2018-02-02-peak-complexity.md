@@ -42,6 +42,6 @@ The worst thing you can do is build a complexity mountain and not harvest the
 simplicity gains on the other side. The descent may require a smaller team and
 take less time than it took to climb, but is incredibly important work. As I’ve
 written about before, the more you can [simplify the mental model of the
-software](/drafts), the more leverage you build. Failing to recognize peak
-complexity and staying at the peak is how you end up supporting your project
-forever.
+software](/drafts), the more leverage you build. If you fail to recognize peak
+complexity and descend you may strand there. This is how you end up supporting
+your project forever.
