@@ -28,7 +28,7 @@ floor-patch at a time.
 This model works with software, too. As we embark on a complex project, we need
 to consider where we are on that complexity mountain. We have a complexity
 budget to manage. The more complexity you add, the harder it is to onboard new
-members to the team. Typically, your bus factor is low, because few people can
+members to the team. Typically, your bus factor is high, because few people can
 manage this complexity. With high complexity, the probability of error increases
 non-linearly. Consider your project’s inflection points and structure it to have
 many small ones, rather than one giant, compounding Mount Everest. The bigger
