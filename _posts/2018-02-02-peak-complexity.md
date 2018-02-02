@@ -18,13 +18,13 @@ of your house is *worse* than it was before you started. We accept this step as
 necessary to organize. Only when it's all laid out can you decide what goes back
 in, and what doesn't.
 
+![](/static/images/peak-complexity.png)
+
 When you’re cleaning your house, you do this one messy place at a time: the
 bedroom closet, then the attic, and lastly, the dreaded basement. Doing it all
 at once would be utter mayhem; costumes, stamp collections, coats, and lego sets
 everywhere. We’re managing our series of peak complexity points to one messy
 floor-patch at a time.
-
-![](/static/images/peak-complexity.png)
 
 This model works for software, too. As we embark on a complex project, we need
 to consider the pending complexity peaks(s). It's completely okay to add
