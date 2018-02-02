@@ -3,10 +3,10 @@ layout: post
 title: Peak Complexity
 ---
 
-With the teams I work with, we operate with the idea of ‘peak complexity’: the
-time at which a project reaches peak complexity. Peak complexity has proved a
-useful mental model to us for reasoning about complexity; when to step back and
-refactor, staffing; how many people should be working on a project, and
+With the teams I work with, we operate with the idea of _peak complexity_: the
+time at which a project reaches its highest complexity. Peak complexity has
+proved a useful mental model to us for reasoning about complexity; when to step
+back and refactor, staffing; how many people should be working on a project, and
 prioritization; how quickly can we move on this today without shooting ourselves
 in the foot.
 
