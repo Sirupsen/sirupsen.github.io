@@ -3,8 +3,6 @@ layout: post
 title: Peak Complexity
 ---
 
-![](/static/images/peak-complexity.png)
-
 With the teams I work with, we operate with the idea of ‘peak complexity’: the
 time at which a project reaches peak complexity. Peak complexity has proved a
 useful mental model to us for reasoning about complexity; when to step back and
@@ -24,6 +22,8 @@ the bedroom closet, then the attic, and lastly, the dreaded basement. Why?
 Because doing it all at once would be utter mayhem; costumes, stamp collections,
 coats, and lego sets everywhere. We’re managing peak complexity to one messy
 floor-patch at a time.
+
+![](/static/images/peak-complexity.png)
 
 This model works with software, too. As we embark on a complex project, we need
 to consider where we are on that complexity mountain. We have a complexity
