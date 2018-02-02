@@ -27,17 +27,20 @@ floor-patch at a time.
 ![](/static/images/peak-complexity.png)
 
 This model works for software, too. As we embark on a complex project, we need
-to consider the pending complexity mountain(s). It's completely okay to add
+to consider the pending complexity peaks(s). It's completely okay to add
 complexity along the journey, that's part of the job. But it's also part of the
 job to manage your complexity budget. Be honest with your team about where you
 reside on the curve. The more complexity you add, the harder it is to onboard
 new members to the team. Typically, your bus factor increases, because few
-people can manage this complexity at a time. With high complexity, the
-probability of error increases non-linearly. It's prudent to review your
+people can hold this complexity in their head at a time. With high complexity,
+the probability of error increases non-linearly. It's prudent to review your
 project’s inflection points and structure it to have many small peaks. This
-avoids creating a Complexity Everest. You want many small hills, delivering
-value every step of the way. The bigger the mountain, the more mountain caves
-you leave for unknown-unknowns.
+avoids creating a Complexity Everest. A big mountain is tough to climb. It gets
+exponentially harder the closer you get to the top as oxygen levels decrease,
+wind increases, temperature drops, and willpower depletes. That's why you want
+to structure your project into many hills instead of mountains: day-time hikes
+with picnic baskets. Sometimes, the inevitable mountain appears--and that's
+okay, but be realistic about what it means to the project.
 
 ![](/static/images/peak-complexity-smaller.png)
 
