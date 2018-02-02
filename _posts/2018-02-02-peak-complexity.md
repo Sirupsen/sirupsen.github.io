@@ -38,9 +38,9 @@ project’s inflection points and structure it to have many small peaks. This
 avoids creating a Complexity Everest. A big mountain is tough to climb. It gets
 exponentially harder the closer you get to the top as oxygen levels decrease,
 wind increases, temperature drops, and willpower depletes. That's why you want
-to structure your project into many hills instead of mountains: day-time hikes
-with picnic baskets. Sometimes, the inevitable mountain appears--and that's
-okay, but be realistic about what it means to the project.
+to structure your project into hills that deliver value every step of the way:
+day-time hikes with picnic baskets. Sometimes, the inevitable mountain
+appears--and that's okay, but be realistic about what it means to the project.
 
 ![](/static/images/peak-complexity-smaller.png)
 
