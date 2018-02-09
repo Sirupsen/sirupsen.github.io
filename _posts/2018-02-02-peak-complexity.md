@@ -16,7 +16,7 @@ everything and arrange it on the floor. When all your winter coats, toques, and
 spare umbrellas are laid out beneath you, you’re at peak complexity. The state
 of your house is *worse* than it was before you started. We accept this step as
 necessary to organize. Only when it's all laid out can you decide what goes back
-in, and what doesn't.
+in, and what doesn't to ultimately lower the complexity from the initial point.
 
 ![](/static/images/peak-complexity.png)
 
