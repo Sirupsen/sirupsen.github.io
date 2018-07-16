@@ -25,7 +25,7 @@ and felt I was missing a handful of things. The team was struggling to get a
 sense of progress. We came up with a matrix that gives an idea of progress of
 the project at a glance:
 
-![](http://i.imgur.com/vp34T1y.png)
+![](https://i.imgur.com/vp34T1y.png)
 
 These models also serve as a domain specific to-do lists: once every cell is
 green / yellow / zero, we've accomplished the task at hand. These success
@@ -57,7 +57,7 @@ spending all your time in the important+urgent box, you're losing.
 Imagine if the team that came up with the standard layer 4 protocols, UDP and
 TCP, had put down a matrix?
 
-![](http://i.imgur.com/LH7ouea.png)
+![](https://i.imgur.com/LH7ouea.png)
 
 Immediately it would've been obvious what was missing. Yes, you can build these
 protocols on top of UDP, but if
