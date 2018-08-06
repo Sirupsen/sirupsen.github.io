@@ -59,7 +59,7 @@ task :img do
 
     image.attr["src"] = dest_target
 
-    post_content.sub!(real_src, dest_target)
+    post_content.sub!(real_src, dest_target.sub("./static", "/static"))
   end
 
   File.open(post, "w") { |f| f.write(post_content) }
