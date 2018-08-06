@@ -2,3 +2,4 @@ _site/
 vendor/
 .DS_Store
 .bundle
+.byebug_history
