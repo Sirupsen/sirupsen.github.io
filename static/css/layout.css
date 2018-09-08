@@ -183,8 +183,11 @@ sub {
   margin-bottom: 20px;
 }
 
-#follow {
+#subscribe {
   font-style: italic;
+  background-color: #fefcda;
+  border-radius: 3%;
+  padding: 10px;
 }
 
 /* #Page Styles
