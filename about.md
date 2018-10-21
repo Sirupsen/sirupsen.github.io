@@ -41,8 +41,8 @@ I spend time pairing, reviewing, and engaged in deeply technical discussions
 with the team. I take immense pleasure in helping the team succeed and enable
 everyone on it to grow.
 
-I spend time [reading][reading], [cooking][cooking], working on [personal
-software projects][airtable], traveling, and walking.
+I spend time [reading][reading], [cooking][cooking], weightlifting, working on
+[personal software projects][airtable], traveling, and walking.
 
 If you need to [pronounce my name][name] in English.
 
