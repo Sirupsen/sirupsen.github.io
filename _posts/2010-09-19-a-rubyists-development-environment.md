@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Rubyist's development environment
+hidden: true
 ---
 
 I consider myself as a Rubyist and a minimalist. I want my tools to be few, and sharp. That means I only want few tools, but I want to master these tools.

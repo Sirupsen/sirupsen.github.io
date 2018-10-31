@@ -2,6 +2,7 @@
 layout: post
 title: The switch to Github Pages
 updated_at: Nov 2012
+hidden: true
 ---
 
 <div class="intro">I ditched my VPS to migrate my blog to Github

@@ -1,8 +1,8 @@
----                                                                                                                                                                                                         
-layout: post                                                                                                                                                                                                
+---
+layout: post
 title: 30 days of super productivity
 published: true
----   
+---
 
 <div class="intro">
   Throughout November, inspired by <a href="http://sebastianmarshall.com/what-if-you-were-to-commit-to-having-the-most-productive-90-days-of-your-life">Sebastian Marshall</a>,

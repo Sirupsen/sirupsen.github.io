@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How I get shit done
+hidden: true
 ---
 
 Today I decided to ditch my to do list.

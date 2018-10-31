@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A simple Imgur Bash screenshot utility
+hidden: true
 ---
 
 I use screenshots a lot, every day. Mostly when I do instant messaging, they can usually help explain something much quicker than anything else. It's rare that I edit the screenshot, and in these rare occasions, it doesn't bother me all that much having to fire up [Pinta](http://pinta-project.com/) or [Gimp](http://www.gimp.org/)--to make these small changes.

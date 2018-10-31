@@ -2,6 +2,7 @@
 layout: post
 title: Get started right with RVM
 updated_at: "Nov 2012"
+hidden: true
 ---
 
 I've always run Ruby with [RVM](http://rvm.beginrescueend.com/). After

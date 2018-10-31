@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Handle passwords with Keychain
+hidden: true
 ---
 
 I considered [1password][1password], but playing with

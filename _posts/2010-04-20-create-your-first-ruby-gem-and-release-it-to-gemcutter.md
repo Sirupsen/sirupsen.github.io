@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Create your first Ruby Gem and release it to Gemcutter
+hidden: true
 ---
 
 A few days ago I was set off to create my first RubyGem. There are many resources on how to do this, but it took me a good while to gather all the information I figured I'd need for my application, so I've decided to gather my bit of knowledge in this article.
