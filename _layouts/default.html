@@ -12,6 +12,9 @@
 
     <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf" type="font/ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="/static/images/gravatar.jpg" as="image">
+    {% for preload in layout.preload %}
+      <link rel="preload" href="{{ preload }}" type="font/ttf" as="font" crossorigin="anonymous">
+    {% endfor %}
 
     <link href="https://feeds.feedburner.com/sirupsen" rel="alternate" title="Sirupsen" type="application/atom+xml" /> 
 

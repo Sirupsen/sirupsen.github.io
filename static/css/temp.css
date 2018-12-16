@@ -641,6 +641,7 @@
 body {
   margin-top: 20px;
   font-family: 'Open sans', sans-serif;
+  font-display: auto;
   font-size: 16px;
 }
 
@@ -650,10 +651,11 @@ p {
 
 h1,h2,h3,h4 {
   font-family: 'Droid Serif', serif;
+  font-display: auto;
   color: #423F37;
 }
 
-h1 { 
+h1 {
   font-size: 2em;
   line-height: 40px;
   margin-bottom: 20px;
