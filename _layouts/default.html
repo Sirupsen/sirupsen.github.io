@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	<!-- Force Latest IE rendering engine -->
     <title>{{ page.title }}</title>
 
-    <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf" type="font/ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/static/fonts/open-sans-regular.ttf" type="font/ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="/static/images/gravatar.jpg" as="image">
     {% for preload in layout.preload %}
       <link rel="preload" href="{{ preload }}" type="font/ttf" as="font" crossorigin="anonymous">
@@ -21,18 +21,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
 
     <link rel="stylesheet" href="/static/css/style.css">
-
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-9939782-5']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-9939782-Y', 'auto');
+      ga('send', 'pageview');
     </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
 
     <link rel="icon" href="data:;base64,=">
   </head>
