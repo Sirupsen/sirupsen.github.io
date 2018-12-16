@@ -9,14 +9,19 @@ task :css do
   `rm static/css/style.css`
   `rm static/css/temp.css`
 
-  %W{font-awesome syntax skeleton base layout}.each do |file|
+  %W{fonts syntax skeleton base layout}.each do |file|
     `cat ./static/css/#{file}.css >> ./static/css/temp.css`
   end
 
   # `mv ./static/css/temp.css ./static/css/style.css`
-  `yuicompressor ./static/css/temp.css > ./static/css/style.css`
+  `minify --css < ./static/css/temp.css > ./static/css/style.css`
 
   puts 'CSS dumped to ./static/css/style.css'
+end
+
+task :gravatar do
+  puts "Downloading gravatar"
+  `curl --silent https://gravatar.com/avatar/100788a81c55bf038fb0798e264e2ec9.jpg?s=400 > ./static/images/gravatar.jpg`
 end
 
 desc "Compile Images"
@@ -68,7 +73,7 @@ end
 desc "Prepare Deploy Assets"
 task :prepare do
   Rake::Task['css'].execute
-  Rake::Task['img'].execute
+  Rake::Task['gravatar'].execute
 end
 
 task "Serve"

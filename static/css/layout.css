@@ -120,7 +120,7 @@ article ul li li li {
 }
 
 #avatar {
-  background-image: url('https://gravatar.com/avatar/100788a81c55bf038fb0798e264e2ec9.png?s=400');
+  background-image: url('/static/images/gravatar.jpg');
   background-size: cover;
   height: 134px;
   width: 134px;
@@ -135,6 +135,7 @@ article ul li li li {
   display: inline-block;
   font-size: 22px;
   overflow: hidden;
+  padding-right: 15px;
 }
 
 #social a, #social a:visited {
