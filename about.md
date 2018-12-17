@@ -59,4 +59,4 @@ If you need to [pronounce my name][name] in English.
 [iphone]: http://sirupsen.com/iphone
 [firmafon]: https://www.firmafon.dk/english
 [semian]: http://github.com/shopify/semian
-[name]: http://127.0.0.1:4000/name.mp3
+[name]: /name.mp3
