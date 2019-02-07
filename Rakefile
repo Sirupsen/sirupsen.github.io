@@ -15,6 +15,7 @@ task :css do
 
   # `mv ./static/css/temp.css ./static/css/style.css`
   `minify --css < ./static/css/temp.css > ./static/css/style.css`
+  `cp ./static/css/style.css _includes/style.css`
 
   puts 'CSS dumped to ./static/css/style.css'
 end
