@@ -12,7 +12,7 @@ At the same time, I worked at [Firmafon][firmafon]. They build a fantastic phone
 and chat support tool for the Danish market. In 2013, I moved to Ottawa, Canada
 to work as a software developer at Shopify. They found me through a [clickbaity
 article][iphone] I wrote about not having a smartphone. It started as a 'gap
-year.' I am now many gap years in and never went to university.
+year.' I am now many gap years in.
 
 When joining Shopify, I was interested in the infrastructure team. That's the
 team that gets paged if the site isn't working.  The goal of the infrastructure
