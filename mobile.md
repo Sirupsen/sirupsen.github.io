@@ -9,7 +9,7 @@ description](http://www.boi2012.lv/data/day1/eng/mobile.pdf).
 I used about 45 minutes of thinking before I started implementing my first solution
 to this task. First, I was thinking about doing an actual simulation of
 expanding the radius of the mobile towers, but I thought that would be very
-slow, so I abondoned this idea. That was stupid, as seen later. I learned from
+slow, so I abandoned this idea. That was stupid, as seen later. I learned from
 this task, that sometimes you SHOULD simulate whatever is actually going on!
 
 Because you can have an error margin of `Δ10^-3`, my first solution was pretty
