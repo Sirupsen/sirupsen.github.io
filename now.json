@@ -1,6 +1,6 @@
 {
-  "name": "sirupsen.com",
+  "name": "sirupsen.github.io",
   "redirects": [
-    { "source": "/napkin", "destination": "https://buttondown.email/computer-napkins)", "statusCode": 302 }
+    { "source": "/napkin", "destination": "https://buttondown.email/computer-napkins", "statusCode": 302 }
   ]
 }
