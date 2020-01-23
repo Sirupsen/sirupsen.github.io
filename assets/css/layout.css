@@ -122,7 +122,7 @@ article ul li li li {
 }
 
 #avatar {
-  background-image: url('/static/images/gravatar.jpg');
+  background-image: url('/static/images/gravatar.jpg/');
   background-size: cover;
   height: 134px;
   width: 134px;
