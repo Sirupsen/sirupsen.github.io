@@ -8,7 +8,16 @@
       {{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}
     {{ end }}</title>
 
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <style>
+      {{- $fonts := resources.Get "css/fonts.css" | toCSS | minify }}
+      {{- $syntax := resources.Get "css/syntax.css" | toCSS | minify }}
+      {{- $skeleton := resources.Get "css/skeleton.css" | toCSS | minify }}
+      {{- $base := resources.Get "css/base.css" | toCSS | minify }}
+      {{- $layout := resources.Get "css/layout.css" | toCSS | minify }}
+      {{- $style := slice $fonts $syntax $skeleton $base $layout | resources.Concat "css/bundle.css" }}
+      {{- $style.Content | safeCSS }}
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/style.css"> -->
 
     <link rel="preload" href="/static/fonts/open-sans-regular.ttf" type="font/ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="/static/images/gravatar.jpg" as="image">

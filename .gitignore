@@ -3,3 +3,4 @@ vendor/
 .DS_Store
 .bundle
 .byebug_history
+resources/
