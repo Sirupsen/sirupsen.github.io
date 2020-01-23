@@ -1,0 +1,16 @@
+{{ define "main" }}
+<ul id="posts" class="twelve columns offset-by-four">
+  {{ range ( where .Site.RegularPages.ByPublishDate.Reverse "Section" "post" )  }}
+  {{ if (not (isset .Params "hidden")) }}
+    <li>
+      {{ if .Params.external_url }}
+      <a class='nine columns' href="{{.Params.external_url}}">{{.Title}}</a>
+      {{ else }}
+          <a class='nine columns' href="{{.RelPermalink}}">{{.Title}}</a>
+      {{ end }}
+      <span class="two columns">{{.Date.Format "Jan 2006"}}</span>
+    </li>
+  {{ end }}
+{{ end }}
+</ul>
+{{ end }}

@@ -1,5 +1,7 @@
 {
   "name": "sirupsen.github.io",
+  "trailingSlash": true,
+  "cleanUrls": true,
   "redirects": [
     { "source": "/napkin", "destination": "https://buttondown.email/computer-napkins", "statusCode": 302 }
   ]

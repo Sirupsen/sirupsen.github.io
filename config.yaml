@@ -1,0 +1,10 @@
+baseURL: https://sirupsen.com
+disablePathToLower: true
+languageCode: en-us
+title: Sirupsen.com
+author:
+  name: "Simon Hørup Eskildsen"
+  email: simon@sirupsen.com
+
+permalinks:
+  post: /:filename

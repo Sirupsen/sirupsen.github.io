@@ -1,3 +1,0 @@
-permalink: '/:title/'
-exclude: [vendor]
-timezone: America/New_York
