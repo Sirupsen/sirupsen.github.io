@@ -1,0 +1,7 @@
+{{ $full_img := $.Page.Resources.GetMatch (.Get 0)}}
+{{ $compressed_img := $full_img.Resize "1200x" }}
+<p>
+  <a href="{{ $full_img.RelPermalink }}" title="{{ .Get 1 }}">
+    <img src="{{ $compressed_img.RelPermalink }}" alt="{{ .Get 1 }}" />
+  </a>
+</p>
