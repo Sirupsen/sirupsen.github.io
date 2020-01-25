@@ -3,6 +3,9 @@
   "trailingSlash": true,
   "cleanUrls": true,
   "redirects": [
-    { "source": "/napkin", "destination": "https://buttondown.email/computer-napkins", "statusCode": 302 }
+    { "source": "/napkin/", "destination": "https://buttondown.email/computer-napkins", "statusCode": 302 }
+  ],
+  "rewrites": [
+    { "source": "/napkin/", "destination": "https://buttondown.email/computer-napkins" }
   ]
 }
