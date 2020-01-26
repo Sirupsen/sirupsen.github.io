@@ -4,6 +4,6 @@
   "cleanUrls": true,
   "redirects": [
     { "source": "/napkin/", "destination": "https://buttondown.email/computer-napkins", "statusCode": 302 },
-    { "source": "/brief-bits-podcast", "destination": "https://feeds.transistor.fm/brief-bits", "statusCode": 302 }
+    { "source": "/brief-bits-podcast/", "destination": "https://feeds.transistor.fm/brief-bits", "statusCode": 302 }
   ]
 }
