@@ -6,6 +6,7 @@
     { "source": "/napkin/", "destination": "https://buttondown.email/computer-napkins", "statusCode": 302 }
   ],
   "rewrites": [
-    { "source": "/napkin/", "destination": "https://buttondown.email/computer-napkins" }
+    { "source": "/napkin/", "destination": "https://buttondown.email/computer-napkins" },
+    { "source": "/brief-bits/", "destination": "https://feeds.transistor.fm/brief-bits" }
   ]
 }

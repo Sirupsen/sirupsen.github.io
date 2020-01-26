@@ -1,6 +1,6 @@
 ---
 date: "2010-04-20T00:00:00Z"
-draft: true
+hidden: true
 title: Create your first Ruby Gem and release it to Gemcutter
 ---
 

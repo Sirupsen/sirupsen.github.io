@@ -1,0 +1,42 @@
+{{ define "header" }}
+  <link rel="preload" href="/static/fonts/droid-serif-regular.ttf/" type="font/ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/static/fonts/open-sans-italic.ttf/" type="font/ttf" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/static/fonts/open-sans-semibold.ttf/" type="font/ttf" as="font" crossorigin="anonymous">
+{{ end }}
+
+{{ define "main" }}
+
+<article class='ten columns offset-by-four' id="article-content">
+  <header class="ten columns" id="article-header">
+    <h1>{{ .Params.title }}</h1>
+  </header>
+
+  <div class='ten columns gray' id="date-header">
+    <p>
+      {{ .Date.Format "Jan 2006"}}
+  {{ if .Params.updated_at }}
+      revised {{ .Params.updated_at }}
+  {{ end }}
+    </p>
+
+  </div>
+
+  <div class="ten columns" id="article-content">
+    <div id="subscribe">
+      This is an episode of Brief Bits, where I briefly cover things I've
+      learned about computers. This is also available in audio format for your
+      commute. You can subscribe using the widget below.<br/><br/>
+
+      <iframe src='https://share.transistor.fm/e/2aabfa26' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>
+    </div></br>
+
+    {{ .Content }}
+
+    {{ if .Params.external_url }}
+      <p><a href="{{ .Params.external_url }}">This is the external URL you're looking for.</a></p>
+    {{ end }}
+
+  </div>
+</article>
+
+{{ end }}
