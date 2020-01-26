@@ -30,29 +30,6 @@ talk][napkin-talk] on the topic as an excuse to dive in even further. To keep my
 first-principle problem][napkin-news].
 
 
-## Health
-
-For as long as I can remember I've had a few fairly specific fitness goals:
-handstand push-ups, muscle-ups, one-arm pull-ups, respectable olympic lifts,
-hand walks, and a few others. Unfortunately, I've made little progress in this
-realm and mostly stuck with the exercises I felt comfortable with. Achieving
-proficiency in these movements requires some gruelling preparatory work, such as
-wall walks (extremely tiring), 100s of kicking up against a wall to a hand-stand
-and slowly lowering yourself (15 minutes of this is enervating), and feeling
-sketchy about cleaning above a certain weight. Something that takes a lot of
-energy and time to figure out on your own.
-
-Consulting with a good friend (who's in impeccable shape) on the issue, he
-recommended I seek out [OPEX Ottawa](https://opexottawa.com/). OPEX is a
-franchise with a strict training program (that my friend had gone through).
-Instead of doing classic personal training at a set time on a set day, they send
-you programs and have you execute the program independently (either at their
-gym, or your own). You meet with the coach occasionally, and have contact with
-them throughout the week through the app. That sounded perfect, because it meant
-I could maintain my freedom of going whenever and wherever I liked. Through a
-3-hour assessment, he found many strength imbalances, mobility bottlenecks, and
-several other blind-spots. By and large, the best decision for health in 2019.
-
 ## Reading
 
 My 2019 reading ended up focused on innovation, the history of innovation, and
@@ -140,3 +117,27 @@ mountains every year (I am thrilled I didn't know this while I was out there).
 [napkin-talk]: https://www.youtube.com/watch?v=IxkSlnrRFqc
 [napkin-news]: https://sirupsen.com/napkin
 [energy-review]: https://www.goodreads.com/review/show/3008690448
+
+## Health
+
+For as long as I can remember I've had a few fairly specific fitness goals:
+handstand push-ups, muscle-ups, one-arm pull-ups, respectable olympic lifts,
+hand walks, and a few others. Unfortunately, I've made little progress in this
+realm and mostly stuck with the exercises I felt comfortable with. Achieving
+proficiency in these movements requires some gruelling preparatory work, such as
+wall walks (extremely tiring), 100s of kicking up against a wall to a hand-stand
+and slowly lowering yourself (15 minutes of this is enervating), and feeling
+sketchy about cleaning above a certain weight. Something that takes a lot of
+energy and time to figure out on your own.
+
+Consulting with a good friend (who's in impeccable shape) on the issue, he
+recommended I seek out [OPEX Ottawa](https://opexottawa.com/). OPEX is a
+franchise with a strict training program (that my friend had gone through).
+Instead of doing classic personal training at a set time on a set day, they send
+you programs and have you execute the program independently (either at their
+gym, or your own). You meet with the coach occasionally, and have contact with
+them throughout the week through the app. That sounded perfect, because it meant
+I could maintain my freedom of going whenever and wherever I liked. Through a
+3-hour assessment, he found many strength imbalances, mobility bottlenecks, and
+several other blind-spots. By and large, the best decision for health in 2019.
+
