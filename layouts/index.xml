@@ -1,6 +1,7 @@
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := $pctx.RegularPages -}}
+{{- $pages := ( where .Site.RegularPages.ByPublishDate.Reverse "Section" "post" )  }}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
 {{- $pages = $pages | first $limit -}}
