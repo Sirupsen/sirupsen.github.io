@@ -17,7 +17,9 @@
 
       <span class="two columns">{{.Date.Format "Jan 2006"}}</span>
 
-      <iframe src='https://share.transistor.fm/e/{{ .Params.id }}' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>
+      {{ if .Params.podcast_episode_id }}
+      <iframe src='https://share.transistor.fm/e/{{ .Params.podcast_episode_id }}' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>
+      {{ end }}
     </li>
   {{ end }}
 {{ end }}
