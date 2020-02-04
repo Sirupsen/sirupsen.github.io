@@ -7,12 +7,13 @@
   ],
   "headers": [
     {
-      "source": "*.(png|jpg|jpeg|gif|svg)$",
+      "source": "/static/images/(.*)",
       "headers" : [
         {
           "key" : "Cache-Control",
-          "value" : "s-maxage=604800, stale-while-revalidate"
+          "value" : "maxage=604800, s-maxage=604800, stale-while-revalidate"
         }
       ]
     }
+  ]
 }
