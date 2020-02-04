@@ -4,5 +4,12 @@
   "cleanUrls": true,
   "redirects": [
     { "source": "/brief-bits-podcast/", "destination": "https://feeds.transistor.fm/brief-bits", "statusCode": 302 }
+  ],
+   "routes": [
+    {
+      "src": "/static/images/(.*)",
+      "headers": { "cache-control": "s-maxage=604800" },
+      "dest": "/static/images/$1"
+    }
   ]
 }
