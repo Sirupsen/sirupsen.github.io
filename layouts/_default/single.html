@@ -3,6 +3,21 @@
   <header class="ten columns" id="article-header">
     <h1>{{ .Params.title }}</h1>
   </header>
+
+  <div class='ten columns gray' id="date-header">
+    <p>
+      {{ .Date.Format "Jan 2006"}}
+  {{ if .Params.updated_at }}
+      revised {{ .Params.updated_at }}
+  {{ end }}
+
+  {{ if .Params.book_author }} by
+  <a href="{{ .Params.book_goodreads_link }}">{{ .Params.book_author }},
+    published {{ .Params.book_publication_year }}</a>
+  {{ end }}
+    </p>
+
+  </div>
   <div class="ten columns" id="article-content">
     {{ .Content }}
   </div>
