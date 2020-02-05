@@ -6,14 +6,16 @@
 
   <div class='ten columns gray' id="date-header">
     <p>
+    {{ if .Date }}
       {{ .Date.Format "Jan 2006"}}
-  {{ if .Params.updated_at }}
-      revised {{ .Params.updated_at }}
-  {{ end }}
 
-  {{ if .Params.book_author }} by
-  <a href="{{ .Params.book_goodreads_link }}">{{ .Params.book_author }},
-    published {{ .Params.book_publication_year }}</a>
+      {{ if .Params.updated_at }}
+          revised {{ .Params.updated_at }}
+      {{ end }}
+    {{ end }}
+
+  {{ if .Params.book_author }}
+    by <a href="{{ .Params.book_goodreads_link }}">{{ .Params.book_author }}, published {{ .Params.book_publication_year }}</a>
   {{ end }}
     </p>
 
