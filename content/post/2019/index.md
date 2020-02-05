@@ -115,7 +115,7 @@ mountains every year (I am thrilled I didn't know this while I was out there).
 {{< img "*slovenia*" "The mountains I got lost in" >}}
 
 [napkin-talk]: https://www.youtube.com/watch?v=IxkSlnrRFqc
-[napkin-news]: https://sirupsen.com/napkin
+[napkin-news]: /napkin
 [energy-review]: https://www.goodreads.com/review/show/3008690448
 
 ## Health

@@ -46,16 +46,16 @@ I spend time [reading][reading], [cooking][cooking], weightlifting, working on
 If you need to [pronounce my name][name] in English.
 
 [kafka]: http://www.shopify.com/technology/14909841-kafka-producer-pipeline-for-ruby-on-rails
-[ioi]: https://sirupsen.com/my-journey-to-the-international-olympiad-in-informatics/
+[ioi]: /my-journey-to-the-international-olympiad-in-informatics/
 [dockercon]: https://www.youtube.com/watch?v=Qr0sATj9IVc
 [resiliency]: https://atscaleconference.com/videos/resiliency-testing-with-toxiproxy/
 [toxiproxy]: https://github.com/shopify/toxiproxy
 [pods]: https://www.youtube.com/watch?v=N8NWDHgWA28
 [jobs]: https://www.youtube.com/watch?v=XvnWjsmAl60
-[reading]: https://sirupsen.com/read/
-[cooking]: https://sirupsen.com/season-driven-cooking/
-[airtable]: https://sirupsen.com/airtable/
-[iphone]: http://sirupsen.com/iphone
+[reading]: /read/
+[cooking]: /season-driven-cooking/
+[airtable]: /airtable/
+[iphone]: /iphone/
 [firmafon]: https://www.firmafon.dk/english
 [semian]: http://github.com/shopify/semian
 [name]: /name.mp3
