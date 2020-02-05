@@ -1,6 +1,7 @@
 baseURL: https://sirupsen.com
 languageCode: en-us
 title: Sirupsen.com
+enableEmoji: true
 author:
   name: "Simon Hørup Eskildsen"
   email: simon@sirupsen.com

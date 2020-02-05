@@ -29,7 +29,7 @@ the challenge, I jotted down the things I wanted to achieve:
   was a great candidate.
 * **Get back into running.** Since the summer of 2011 I have enjoyed barefoot
    running on and off. In August and September I had excused myself with the
-   preparations for and the actual [Informatics Olympiad](http://sirupsen.com/my-journey-to-the-international-olympiad-in-informatics/)
+   preparations for and the actual [Informatics Olympiad](/my-journey-to-the-international-olympiad-in-informatics/)
    and got out of my running rhythm.
 * **Waste fewer hours a day.** Too many hours are wasted on social media, Skype and
   improper planning. Low hanging fruit.
