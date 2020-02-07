@@ -3,7 +3,7 @@ list: books
 title: Book Reviews
 ---
 
-## Book Reviews
+# Book Reviews
 
 I try my best to write a short summary/review of the books I read. I typically
 [publish them on
