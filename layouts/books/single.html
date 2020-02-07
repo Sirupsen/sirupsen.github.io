@@ -7,12 +7,22 @@
   <div class='ten columns gray' id="date-header">
     <p>
     {{ if .Date }}
-      {{ .Date.Format "Jan 2006"}}
+    Read in {{ .Date.Format "Jan 2006"}}
 
       {{ if .Params.updated_at }}
-          revised {{ .Params.updated_at }}
+          review revised on {{ .Params.updated_at }}
       {{ end }}
     {{ end }}
+    <br/>
+
+  {{ if .Params.book_author }}
+  <a href="{{ .Params.book_goodreads_link }}">Book by {{ .Params.book_author }}</a>
+
+      {{ if .Params.book_publication_year }}
+        published in {{ .Params.book_publication_year }}
+      {{ end }}
+    </p>
+  {{ end }}
 
   </div>
   <div class="ten columns" id="article-content">

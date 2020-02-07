@@ -58,6 +58,11 @@ class Sirupsen < Thor
 
         rating = review.rating.to_i > 0 ? review.rating : "?"
 
+        body = review.body
+        body.gsub!(/&gt\;(.+?)\<br \/><br \/>/, "<blockquote>\\1</blockquote>")
+
+        # byebug if review.book.title =~ /grit/i
+
         filename = "./content/books/#{book_title_short}.html"
         File.open(filename, 'w+') do |f|
           f.write("---\n")
@@ -67,7 +72,7 @@ class Sirupsen < Thor
           f.write("book_publication_year: \"#{review.book.publication_year}\"\n")
           f.write("book_goodreads_link: \"#{review.book.link}\"\n")
           f.write("---\n\n")
-          f.write(review.body)
+          f.write(body)
         end
       end
     end
