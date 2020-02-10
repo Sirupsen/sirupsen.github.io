@@ -71,8 +71,9 @@ class Sirupsen < Thor
           f.write("book_author: \"#{review.book.authors.author.name.gsub("\"", "'")}\"\n")
           f.write("book_publication_year: \"#{review.book.publication_year}\"\n")
           f.write("book_goodreads_link: \"#{review.book.link}\"\n")
-          f.write("---\n\n")
-          f.write(body)
+          f.write("---\n\n<p>")
+          f.write(body.strip)
+          f.write("</p>")
         end
       end
     end
