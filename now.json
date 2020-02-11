@@ -7,7 +7,7 @@
   ],
   "headers": [
     {
-      "source": "/static/images/(.*)",
+      "source": "/static/(images|fonts)/(.*)",
       "headers" : [
         {
           "key" : "Cache-Control",
