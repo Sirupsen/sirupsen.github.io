@@ -3,6 +3,10 @@ date: "2018-07-15T00:00:00Z"
 title: How I Read
 ---
 
+_Dan Shipper wrote an [awfully nice
+post](https://superorganizers.substack.com/p/how-to-build-a-learning-machine)
+about a more recent iteration of this system, as of March, 2020_
+
 Until a few years ago, I didn't spend much time reading. Today, I spend a few
 hours every week reading, amounting to somewhere between 30 and 50 books a year.
 My reading habit has evolved significantly over the past couple of years and
