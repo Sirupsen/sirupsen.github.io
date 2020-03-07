@@ -22,6 +22,8 @@ What would you estimate the worst-case performance of an average query with 4 AN
 As always, you can find resources at [github.com/sirupsen/napkin-math](https://github.com/sirupsen/napkin-math). The talk linked is the best introduction tot he topic.  
   
 Please reply with your answer!  
+
+_Solution to this problem is [available in the next edition](/napkin/problem-4/)_
   
 **Answer to Problem 2**  
   

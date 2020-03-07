@@ -17,6 +17,8 @@ Unphased after this encounter, you walk to the window. You look out and sip your
 
 What kind of throughput might we be able to expect for a single-thread, as an absolute upper-bound if we disregard I/O? What if we include I/O (and assume it's blocking each command), so it's akin to a simple TCP server? Based on that result, would you say that they have more investigation to do before adding more servers?
 
+_Solution to this problem is [available in the next edition](/napkin/problem-5/)_
+
 **Answer to Problem 3**
 
 You can read the problem in the archive, [here](https://buttondown.email/computer-napkins/archive/16a42790-e498-4804-8e17-769ff3a30d34).

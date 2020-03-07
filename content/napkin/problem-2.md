@@ -20,6 +20,8 @@ expected average query time from your database?**
 Reply to this email with your answer, happy to provide you mine ahead of time if
 you're curious.
 
+_Solution to this problem is [available in the next edition](/napkin/problem-3/)_
+
 **Last Problem's Solution**
 
 **Question:** **How much will the storage of logs cost for a standard,

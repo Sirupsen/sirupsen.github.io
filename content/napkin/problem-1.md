@@ -8,6 +8,8 @@ Napkin friends around the world: it's time for your very first system' estimatio
 **Problem #1: How much will the storage of logs cost for a standard, monolithic 100,000 RPS web application?**  
   
 Reply to this email with your answer and how you arrived there. Then I'll send you mine.  
+
+_Solution to this problem is [available in the next edition](/napkin/problem-2/)_
   
 **Hints**  
   
