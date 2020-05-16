@@ -206,7 +206,7 @@ project fail because, by analogy, you 'started cabling with transistors
 immediately after its discovery.' Sometimes you just need to bite your lip and
 go with the vacuum tube.
 
-Despite this, it didn't Bell any less excited about the transistor. They knew
+Despite this, it didn't make Bell any less excited about the transistor. They knew
 that the vacuum tube's potential had been maxed out, while the transistor's was
 just starting. Even today, as we reach `5nm` (orders and orders of magnitude
 smaller and faster) transitors, the transitor's potential still hasn't been
