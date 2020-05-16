@@ -280,7 +280,7 @@ few doors out from where you're standing, that means it's time to reconsider
 your approach. When Apple released the iPod in 2001, they surely were eyeing a
 phone in the _remote possible_. They knew that going straight for it, they'd be
 blasting through doors at a pace that'd yield an immature, poor product. They
-found a way to sustainable way to open the doors for the phone through the iPod.
+found a way to sustainably open the doors for a phone through the iPod.
 When you find a seemingly intractable problems, there's almost always a
 tractable problem worth solving hiding inside of it as a stepping stone.
 
