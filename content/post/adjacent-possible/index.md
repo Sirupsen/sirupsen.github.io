@@ -1,6 +1,6 @@
 ---
 date: "2020-05-10T00:00:00Z"
-title: "Adjacent Possible: Peeking into the Future"
+title: "Adjacent Possible: Model for Peeking into the Future"
 ---
 
 There are [100s of cases][2] of important discoveries being made independently
