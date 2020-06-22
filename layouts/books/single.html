@@ -1,14 +1,13 @@
 {{ define "main" }}
 <article class='ten columns offset-by-four' id="article-content">
   <header class="ten columns" id="article-header">
-    <h1>{{ .Params.title }}</h1>
+    <h2>{{ .Params.title }}</h2>
   </header>
 
   <div class='ten columns gray' id="date-header">
     <p>
     {{ if .Date }}
     Read in {{ .Date.Format "Jan 2006"}}
-
       {{ if .Params.updated_at }}
           review revised on {{ .Params.updated_at }}
       {{ end }}
@@ -17,7 +16,6 @@
 
   {{ if .Params.book_author }}
   <a href="{{ .Params.book_goodreads_link }}">Book by {{ .Params.book_author }}</a>
-
       {{ if .Params.book_publication_year }}
         published in {{ .Params.book_publication_year }}
       {{ end }}
@@ -26,6 +24,13 @@
 
   </div>
   <div class="ten columns" id="article-content">
+    <div id="subscribe">
+      I try my best to write a short summary/review of the books I read, and
+      this is one of them. I typically <a
+        href="https://www.goodreads.com/user/show/38623347-simon-eskildsen">publish
+        them on Goodreads</a>, but also sync them to <a href="/books">here</a>.
+    </div>
+
     {{ .Content }}
   </div>
 {{ end }}
