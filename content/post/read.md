@@ -1,11 +1,10 @@
 ---
 date: "2018-07-15T00:00:00Z"
 title: How I Read
+updated_at: March 2020
+notice: "**March 2020:** Dan Shipper wrote an [awfully nice post](https://superorganizers.substack.com/p/how-to-build-a-learning-machine) about a more recent iteration of this system."
 ---
 
-_Dan Shipper wrote an [awfully nice
-post](https://superorganizers.substack.com/p/how-to-build-a-learning-machine)
-about a more recent iteration of this system, as of March, 2020_
 
 Until a few years ago, I didn't spend much time reading. Today, I spend a few
 hours every week reading, amounting to somewhere between 30 and 50 books a year.

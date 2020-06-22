@@ -22,6 +22,12 @@
   </div>
 
   <div class="ten columns" id="article-content">
+    {{ if .Params.notice }}
+      <div id="subscribe">
+        {{ .Params.notice | markdownify }}
+      </div>
+    {{ end }}
+
     {{ .Content }}
 
     {{ if .Params.external_url }}
