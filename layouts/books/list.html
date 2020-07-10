@@ -11,6 +11,29 @@
     {{ $pages = $pages.Reverse }}
   {{ end }}
 
+  <li>
+    <a class="eight columns offset-by-four">
+    </a>
+
+    <div class="four columns">
+      {{ if .Params.list_sort_order }}
+        <img src="/static/images/sort.svg" style="display: inline-block; opacity: 20%;" width="16px" />
+
+        <a href="/books/">
+          <img src="/static/images/sort.svg" style="display: inline-block;
+          padding-left: 94px;" width="16px" />
+        </a>
+      {{ else }}
+        <a href="/books/by-stars/">
+          <img src="/static/images/sort.svg" style="display: inline-block; opacity: 100%;" width="16px" />
+        </a>
+
+        <img src="/static/images/sort.svg" style="display: inline-block;
+        padding-left: 94px; opacity: 20%;" width="16px" />
+      {{ end }}
+    </div>
+  </li>
+
   {{ range ( where $pages "Section" .Params.list ) }}
   {{ if (not (isset .Params "hidden")) }}
     <li>
