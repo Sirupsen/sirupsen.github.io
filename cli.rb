@@ -56,7 +56,7 @@ class Sirupsen < Thor
                  "❓"
                end
 
-        rating = review.rating.to_i > 0 ? review.rating : "?"
+        rating = review.rating.to_i > 0 ? review.rating : "-1"
 
         body = review.body
         body.gsub!(/&gt\;(.+?)\<br \/><br \/>/, "<blockquote>\\1</blockquote>")
@@ -66,9 +66,11 @@ class Sirupsen < Thor
         filename = "./content/books/#{book_title_short}.html"
         File.open(filename, 'w+') do |f|
           f.write("---\n")
-          f.write("date: \"#{Time.parse(review.date_added)}\"\n")
-          f.write("title: \"#{icon} #{rating}/5 - #{review.book.title}\"\n")
+          f.write("date: \"#{Time.parse(review.read_at || review.date_added)}\"\n")
+          f.write("title: \"#{review.book.title}\"\n")
           f.write("book_author: \"#{review.book.authors.author.name.gsub("\"", "'")}\"\n")
+          f.write("book_rating: \"#{rating}\"\n")
+          f.write("book_rating_icon: \"#{icon}\"\n")
           f.write("book_publication_year: \"#{review.book.publication_year}\"\n")
           f.write("book_goodreads_link: \"#{review.book.link}\"\n")
           f.write("---\n\n<p>")

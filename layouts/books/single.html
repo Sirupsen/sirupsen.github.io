@@ -5,13 +5,28 @@
   </header>
 
   <div class='ten columns gray' id="date-header">
-    <p>
+      {{- $full_stars := int .Params.book_rating }}
+      {{- $not_full_stars := sub 5 $full_stars }}
+
     {{ if .Date }}
     Read in {{ .Date.Format "Jan 2006"}}
       {{ if .Params.updated_at }}
           review revised on {{ .Params.updated_at }}
       {{ end }}
     {{ end }}
+
+    <span style="padding-left: 8px;"/>
+      {{ if eq $full_stars -1 }}
+        Unrated
+      {{ else }}
+        {{ range (seq $full_stars) }}
+          <img src="/static/images/star.svg" style="display: inline-block; opacity: 100%;" width="16px" />
+        {{ end }}
+
+        {{ range (seq $not_full_stars) }}
+          <img src="/static/images/star.svg" style="display: inline-block; opacity: 20%;" width="16px" />
+        {{ end }}
+      {{ end }}
     <br/>
 
   {{ if .Params.book_author }}

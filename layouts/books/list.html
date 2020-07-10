@@ -1,0 +1,40 @@
+{{ define "main" }}
+<header class="twelve columns offset-by-four" id="article-header">
+  {{ .Content }}
+</header>
+
+<ul id="posts">
+  {{ range ( where .Site.RegularPages.ByPublishDate.Reverse "Section" .Params.list )  }}
+  {{ if (not (isset .Params "hidden")) }}
+    <li>
+      {{ if .Params.external_url }}
+        <a class='eight columns offset-by-four' href="{{.Params.external_url}}">{{emojify .Title}}</a>
+      {{ else }}
+        <a class='eight columns offset-by-four' href="{{.RelPermalink}}">{{emojify .Title}}</a>
+      {{ end }}
+
+      {{- $full_stars := int .Params.book_rating }}
+      {{- $not_full_stars := sub 5 $full_stars }}
+
+      <div class="four columns">
+        {{ if eq $full_stars -1 }}
+          Unrated
+        {{ else }}
+          {{ range (seq $full_stars) }}
+            <img src="/static/images/star.svg" style="display: inline-block; opacity: 100%;" width="16px" />
+          {{ end }}
+
+          {{ range (seq $not_full_stars) }}
+            <img src="/static/images/star.svg" style="display: inline-block; opacity: 20%;" width="16px" />
+          {{ end }}
+        {{ end }}
+
+          <!-- {{.Params.book_rating}} / 5 -->
+        </a>
+        <span style="padding-left: 8px;">{{.Date.Format "Jan 2006"}}</span>
+      </div>
+    </li>
+  {{ end }}
+{{ end }}
+</ul>
+{{ end }}
