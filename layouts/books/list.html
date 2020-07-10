@@ -4,7 +4,14 @@
 </header>
 
 <ul id="posts">
-  {{ range ( where .Site.RegularPages.ByPublishDate.Reverse "Section" .Params.list )  }}
+  {{ $pages := .Site.RegularPages.ByPublishDate.Reverse }}
+
+  {{ if .Params.list_sort_order }}
+    {{ $pages = .Site.RegularPages.ByParam .Params.list_sort_order }}
+    {{ $pages = $pages.Reverse }}
+  {{ end }}
+
+  {{ range ( where $pages "Section" .Params.list ) }}
   {{ if (not (isset .Params "hidden")) }}
     <li>
       {{ if .Params.external_url }}
