@@ -1,6 +1,6 @@
 ---
 date: 2020-07-17T08:20:41.915071Z
-title: Napkin Problem 10: MySQL transactions per second vs fsyncs per second
+title: "Napkin Problem 10: MySQL transactions per second vs fsyncs per second"
 ---
 
 Napkin friends, from near and far, it’s time for another napkin problem!
