@@ -1,6 +1,6 @@
 ---
 date: 2020-02-03T12:03:40.020423Z
-title: Napkin Problem 5
+title: "Napkin Problem 5: Composite Primary Keys"
 ---
 
 Napkin friends, from near and far, it's time for napkin problem number 5! If
@@ -52,6 +52,8 @@ memory cache (typically that would happen after (1))?
 performance be when (3a) going to disk, and (3b) hitting cache?
 
 I love seeing your answers, so don't hesitate to email me those back!
+
+[Answer is available in the next edition.](/napkin/problem-6/)
 
 **Answer to Problem 4**
 

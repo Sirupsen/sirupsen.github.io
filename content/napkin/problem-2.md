@@ -1,6 +1,6 @@
 ---
 date: 2019-11-02T00:00:00Z
-title: Napkin Problem 2
+title: "Napkin Problem 2: Expected Database Query Latency"
 ---
 
 Fellow computer-napkin-mathers, it's time for napkin problem #2. The last

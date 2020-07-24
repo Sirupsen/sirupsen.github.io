@@ -1,6 +1,6 @@
 ---
 date: 2020-04-11T15:03:32.250252Z
-title: Napkin Problem 7
+title: "Napkin Problem 7: Revision History"
 ---
 
 Napkin friends, from near and far, it’s time for another napkin problem!
@@ -32,6 +32,8 @@ Let's try to analyze what it would look like to get revision history on top of a
 (a) How much extra storage space do you anticipate this simple scheme would require after a month? A year? What would this cost on a standard cloud provider?
 
 (b) Based on (a), would you keep storing it in a relational database, or would you store it somewhere else? Where? Could you store it differently more efficiently without changing the storage engine?
+
+[Answer is available in the next edition.](/napkin/problem-8/)
 
 **Answer to Problem 6**
 

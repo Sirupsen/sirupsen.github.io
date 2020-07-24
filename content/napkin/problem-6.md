@@ -1,6 +1,6 @@
 ---
 date: 2020-03-07T12:05:21.600807Z
-title: Napkin Problem 6
+title: "Napkin Problem 6: In-memory Search"
 ---
 
 Napkin friends, from near and far, it’s time for napkin problem number 6!
@@ -21,6 +21,8 @@ something ultra-simple, like loading _all_ articles into memory and searching
 them with Javascript? Can NYT do it?
 
 Feel free to reply with your answer, would love to hear them! Mine will be given in the next edition.
+
+[Answer is available in the next edition.](/napkin/problem-7/)
 
 **Answer to Problem 5**
 

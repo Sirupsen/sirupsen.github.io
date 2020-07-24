@@ -1,6 +1,6 @@
 ---
 date: 2020-05-03T16:12:34.822033Z
-title: Napkin Problem 8
+title: "Napkin Problem 8: Data Synchronization"
 ---
 
 Napkin friends, from near and far, it’s time for another napkin problem!
@@ -25,19 +25,23 @@ We'll imagine a slightly different scenario. We have a client (web browser with 
 
 The query behind an API might look like this (in reality, the query would look more like [this](https://www.usenix.org/sites/default/files/conference/protected-files/srecon19emea_slides_weingarten.pdf#page=62)):
 
-``` SELECT SHA1(table.updated_at) FROM table WHERE user_id = 1 ```
+```sql
+SELECT SHA1(table.updated_at) FROM table WHERE user_id = 1
+```
 
 The user does the same query locally. If the hashes match, user is already synced!
 
 If the local and server-side hash don't match, we'd have to figure out what's happened since the user was last online and send the changes (possibly in both directions). This can be useful on its own, but can become very powerful for syncing when extended further.
 
-**(a)** How much time would you expect the server-side query to take for 100,000 records that the client might have synced? Will it have different performance than the client-side query?
+**(A)** How much time would you expect the server-side query to take for 100,000 records that the client might have synced? Will it have different performance than the client-side query?
 
-**(b)** Can you think of a way to speed up this query?
+**(B)** Can you think of a way to speed up this query?
 
-**(c)** This is a stretch question, but it's fun to think about the full syncing scenario. How would you figure out which rows haven't synced?
+**(C)** This is a stretch question, but it's fun to think about the full syncing scenario. How would you figure out which rows haven't synced?
 
-If you find this problem interesting, I'd encourage you to watch [this video][jlcrdt] (it would help you answer question (c) if you deicde to give it a go).
+If you find this problem interesting, I'd encourage you to watch [this video][jlcrdt] (it would help you answer question (C) if you deicde to give it a go).
+
+[Answer is available in the next edition.](/napkin/problem-9/)
 
 **Answer to Problem 7**
 

@@ -1,6 +1,10 @@
 {{ define "main" }}
 <ul id="posts" class="twelve columns offset-by-four">
-  {{ range ( where .Site.RegularPages.ByPublishDate.Reverse "Section" "post" )  }}
+  {{- $regular := where .Site.RegularPages.ByPublishDate.Reverse "Section" "post" }}
+  {{- $napkin := where .Site.RegularPages.ByPublishDate.Reverse "Section" "napkin" }}
+  {{- $all_posts := union $regular $napkin }}
+
+  {{ range sort $all_posts "PublishDate" "desc" }}
   {{ if (not (isset .Params "hidden")) }}
     <li>
       {{ if .Params.external_url }}

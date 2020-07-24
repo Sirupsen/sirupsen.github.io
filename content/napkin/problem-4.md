@@ -1,6 +1,6 @@
 ---
 date: 2020-01-07T23:08:33.350559Z
-title: Napkin Problem 4
+title: "Napkin Problem 4: Redis throughput"
 ---
 
 Napkin friends, from near and far, it's time for napkin problem number four! If you are wondering why you're receiving this email, you likely watched my talk on [napkin math](https://www.youtube.com/watch?v=IxkSlnrRFqc) and decided to sign up for some monthly training.

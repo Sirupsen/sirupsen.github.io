@@ -1,6 +1,6 @@
 ---
 date: 2020-06-07T18:37:22.006225Z
-title: Napkin Problem 9
+title: "Napkin Problem 9: Inverted Index Performance and Merkle Tree Syncronization"
 ---
 
 Napkin friends, from near and far, it’s time for another napkin problem!
@@ -54,6 +54,8 @@ line up, how might you explain the discrepency?
 
 **(D)** Let's imagine that we want `title AND see` and order the results by the
 last modification date of each document. How long would you expect that to take?
+
+[Answer is available in the next edition.](/napkin/problem-10-mysql-transactions-per-second/)
 
 **Answer to Problem 8**
 

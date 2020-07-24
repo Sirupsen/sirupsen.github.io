@@ -7,3 +7,14 @@ author:
   email: simon@sirupsen.com
 permalinks:
   post: /:filename
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: github
+    tabWidth: 2

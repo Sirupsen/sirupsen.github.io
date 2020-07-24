@@ -1,6 +1,6 @@
 ---
 date: 2019-10-19T00:00:00Z
-title: Napkin Problem 1
+title: "Napkin Problem 1: Logging Cost"
 ---
 
 Napkin friends around the world: it's time for your very first system' estimation problem! Confused why you're receiving this email? Likely you [attended my talk at SRECON 19](https://www.usenix.org/conference/srecon19emea), where I said that I'd start a newsletter with occasional problems to practise your back-of-the-envelope computer calculation skills--if enough of you subscribed! Enough of you did, so here we are!  

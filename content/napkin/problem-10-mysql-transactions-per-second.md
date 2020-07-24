@@ -135,7 +135,7 @@ before calling the expensive `fsync(2)`.
 We can test this hypothesis by writing a simple `bpftrace` script to observe the
 number of `fsync(1)` for the ~16,000 insertions:
 
-```bpftrace
+```d
 tracepoint:syscalls:sys_enter_fsync,tracepoint:syscalls:sys_enter_fdatasync
 /comm == "mysqld"/
 {
@@ -146,7 +146,7 @@ tracepoint:syscalls:sys_enter_fsync,tracepoint:syscalls:sys_enter_fdatasync
 Running this during the ~3 seconds it takes to insert the 16,000 records we get
 ~8,000 `fsync` calls:
 
-```
+```bash
 $ sudo bpftrace fsync_count.d
 Attaching 2 probes...
 ^C
@@ -176,7 +176,7 @@ can use `readlink` and the `proc` file-system to obtain the file name the file
 descriptor points to. Let's write a [`bpftrace` script][10] to see what's being
 `fsync`'ed:
 
-```bpftrace
+```d
 tracepoint:syscalls:sys_enter_fsync,tracepoint:syscalls:sys_enter_fdatasync
 /comm == str($1)/
 {

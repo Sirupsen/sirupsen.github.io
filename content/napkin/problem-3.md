@@ -1,6 +1,6 @@
 ---
 date: 2019-12-15T00:00:00Z
-title: Napkin Problem 3
+title: "Napkin Problem 3: Membership Intersection Service"
 ---
 
 Napkin friends, from near and far, it's time for napkin problem number three! If you are wondering why you're receiving this email, you likely [watched my talk on napkin math.](https://www.youtube.com/watch?v=IxkSlnrRFqc)
