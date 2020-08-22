@@ -1,6 +1,6 @@
 ---
 date: 2020-08-22T12:36:08.143655Z
-title: Napkin Problem 11: Circuit Breakers
+title: "Napkin Problem 11: Circuit Breakers"
 ---
 
 You may have heard of a “circuit breaker” in the context of building resilient

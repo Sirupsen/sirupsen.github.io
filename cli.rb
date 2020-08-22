@@ -19,7 +19,7 @@ class Sirupsen < Thor
       File.open(filename, 'w') do |f|
         f.write("---\n")
         f.write("date: #{email["publish_date"]}\n")
-        f.write("title: #{email["subject"]}\n")
+        f.write("title: #{email["subject"].inspect}\n")
         f.write("---\n\n")
         f.write(email["body"])
       end
