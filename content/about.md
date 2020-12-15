@@ -33,15 +33,24 @@ I started building the Service Communication team that's building the software
 to make it as easy as possible for applications built inside Shopify to talk to
 each other.
 
-Today, I am thoroughly enjoying leading highly technical teams, straddling a
-role somewhere between project manager, manager, and engineer. While I don't
-ship much code myself today (it's higher leverage for me to empower others to),
-I spend time pairing, reviewing, and engaged in deeply technical discussions
-with the team. I take immense pleasure in helping the team succeed and enable
-everyone on it to grow.
+Today, I am run a lab called New Capabilities booting up highly technical teams,
+straddling a role somewhere between project manager, manager, and engineer.  I
+take immense pleasure in taking projects off the ground, while helping the team
+succeed and enable everyone on it to grow. Putting the team in a place as fast
+as possible where they no longer need me.
 
-I spend time [reading][reading], [cooking][cooking], weightlifting, working on
-[personal software projects][airtable], traveling, and walking.
+In 2019 in New Capabilities, I started a team to do a complete [rewrite of the
+Shopify Storefront][sfr], which serves all merchant store traffic. It's
+archicted based on everything we learned running Shopify at scale. It's able to
+serve read-traffic out of multiple regions, [cache better][sfrcache], and much
+more performant.
+
+In 2020, I've worked on patches to MySQL and real-time components for the Admin
+of Shopify. Currently, I'm working on building a search team at Shopify.
+
+Outside of work, I spend time [reading][reading], [cooking][cooking],
+weightlifting, working on [personal software projects][airtable], traveling, and
+walking.
 
 If you need to [pronounce my name][name] in English.
 
@@ -59,3 +68,5 @@ If you need to [pronounce my name][name] in English.
 [firmafon]: https://www.firmafon.dk/english
 [semian]: http://github.com/shopify/semian
 [name]: /name.mp3
+[sfr]: https://shopify.engineering/how-shopify-reduced-storefront-response-times-rewrite
+[sfrcache]: https://shopify.engineering/simplify-batch-cache-optimized-server-side-storefront-rendering
