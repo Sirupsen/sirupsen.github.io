@@ -33,24 +33,23 @@ I started building the Service Communication team that's building the software
 to make it as easy as possible for applications built inside Shopify to talk to
 each other.
 
-Today, I am run a lab called New Capabilities booting up highly technical teams,
-straddling a role somewhere between project manager, manager, and engineer.  I
-take immense pleasure in taking projects off the ground, while helping the team
-succeed and enable everyone on it to grow. Putting the team in a place as fast
-as possible where they no longer need me.
+Today, I run a lab called New Capabilities which boots up highly technical
+teams, straddling a role somewhere between project manager, manager, and
+engineer. I take help get projects off the ground, while building the team and
+enabling everyone on it to grow. My goal is to put the team in a position where
+they no longer need me as fast as possible.
 
-In 2019 in New Capabilities, I started a team to do a complete [rewrite of the
+In 2019 in New Capabilities we started a team to do a complete [rewrite of the
 Shopify Storefront][sfr], which serves all merchant store traffic. It's
-archicted based on everything we learned running Shopify at scale. It's able to
-serve read-traffic out of multiple regions, [cache better][sfrcache], and much
-more performant.
+architected based on everything we have learned from running Shopify at scale.
+It's able to serve read-traffic out of multiple regions, [cache
+better][sfrcache], and is much more performant.
 
-In 2020, I've worked on patches to MySQL and real-time components for the Admin
+In 2020, we've worked on patches to MySQL and real-time components for the Admin
 of Shopify. Currently, I'm working on building a search team at Shopify.
 
 Outside of work, I spend time [reading][reading], [cooking][cooking],
-weightlifting, working on [personal software projects][airtable], traveling, and
-walking.
+weightlifting, working on [personal software projects][airtable], and walking.
 
 If you need to [pronounce my name][name] in English.
 
