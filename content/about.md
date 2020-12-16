@@ -26,7 +26,7 @@ developer's machines to the data-center (Docker, 2014), and improving
 In 2016 I became the lead of a small team (3-5) and was tasked to make [Shopify
 able to run out of multiple data-centers at once][pods], which we completed by
 Black Friday and Cyber Monday in 2016. In 2017, I grew the team into two teams,
-one responsible for [moving shops without downtime between regions][pods] and
+one responsible for [moving shops without downtime between regions][shopmv] and
 another responsible for the 'job infrastructure', running [workloads outside of
 web requests made to Shopify][jobs] to do large-scale data migrations. In 2018,
 I started building the Service Communication team that's building the software
@@ -69,3 +69,4 @@ If you need to [pronounce my name][name] in English.
 [name]: /name.mp3
 [sfr]: https://shopify.engineering/how-shopify-reduced-storefront-response-times-rewrite
 [sfrcache]: https://shopify.engineering/simplify-batch-cache-optimized-server-side-storefront-rendering
+[shopmv]: https://www.usenix.org/conference/srecon16europe/program/presentation/weingarten
