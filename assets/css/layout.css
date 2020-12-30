@@ -194,6 +194,33 @@ sub {
   margin-bottom: 10px;
 }
 
+abbr[aria-label] {
+  position: relative;
+  cursor: help;
+  
+  /* ensure consistent styling across browsers */
+  text-decoration: underline dotted; 
+}
+
+abbr[aria-label]:hover::after,
+abbr[aria-label]:focus::after {
+  content: attr(aria-label);
+  
+  /* position tooltip like the native one */
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: auto;
+  white-space: nowrap;
+  
+  /* style tooltip */
+  background-color: #fefcda;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+  font-size: 14px;
+  padding: 3px 5px;
+}
+
 /* #Page Styles
 ================================================== */
 
