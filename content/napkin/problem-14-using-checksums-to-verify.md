@@ -15,7 +15,7 @@ In this issue of napkin math, we look at implementing a solution to **check whet
 
 If you are firing the events for your syncing mechanism after a transaction occurs, such as enqueuing a job, sending a webhook, or emit a Kafka event, you can't guarantee that it _actually_ gets sent after the transaction is committed. Almost certainly part of pipeline into database B is leaky due to bugs: perhaps there's an exception you don't handle, you drop events on the floor above a certain size, some early return, or deploys lose an event in a rare edge case.
 
-But _even_ if you doing something that's theoretically bullet-proof, like using the database replication logs through [Debezium][5], there's still a good chance a bug somewhere in your syncing pipeline is causing you to lose occasional events. If theoretical guarantees were adequate, [Jepsen][4] wouldn't uncover much, would it? A team I worked with even wrote a TLA+ proof, but still found bugs with a solution like the one I describe here! In my experience, a checksumming system should be part of _any_ syncing system.
+But _even_ if you're doing something that's theoretically bullet-proof, like using the database replication logs through [Debezium][5], there's still a good chance a bug somewhere in your syncing pipeline is causing you to lose occasional events. If theoretical guarantees were adequate, [Jepsen][4] wouldn't uncover much, would it? A team I worked with even wrote a TLA+ proof, but still found bugs with a solution like the one I describe here! In my experience, a checksumming system should be part of _any_ syncing system.
 
 It would seem to me that building reliable syncing mechanisms would be easier if databases had a standard, fast mechanism to answer the question: _"Does database A and B have all the same data? If not, what's different?"_ Over time, as you fix your bugs, it will of course happen more rarely, but being able to guarantee that they are in sync is a huge step forward.
 
@@ -39,7 +39,7 @@ As usual, we will start by considering the simplest possible solution for checki
 ```sql
 SELECT * FROM `table`
 ORDER BY id ASC
-LIMIT #{limit} OFFSET #{offset}
+LIMIT @limit OFFSET @offset
 ```
 
 Let's try to figure out how long this would take: Let's assume each loop is querying the two databases in parallel and our batches are 10,000 records (10 MiB total) large:
@@ -68,7 +68,7 @@ You'd think the optimizer would make this optimization itself, but it doesn't. S
 
 ```sql
 SELECT * FROM `table`
-WHERE id > (SELECT id FROM table LIMIT 1 OFFSET #{offset})
+WHERE id > (SELECT id FROM table LIMIT 1 OFFSET @offset)
 ORDER BY id ASC 
 LIMIT 10000;
 ```
@@ -97,7 +97,7 @@ If we change our approach to maintain `max(id)` from the last batch, we can simp
 
 ```sql
 SELECT * FROM `table`
-WHERE id > #{max_id_from_last_batch}
+WHERE id > @max_id_from_last_batch
 ORDER BY id ASC
 LIMIT 10000;
 ```
@@ -116,7 +116,7 @@ If we want to handle less data, we need to have some way to fingerprint or check
 
 ```sql
 SELECT MD5(*) FROM table
-WHERE id > #{max_id_from_last_batch}
+WHERE id > @max_id_from_last_batch
 ORDER BY id ASC
 LIMIT 10000;
 ```
@@ -139,7 +139,7 @@ SELECT max(id) as max_id, MD5(CONCAT(
 	 MD5(GROUP_CONCAT(UNHEX(MD5(COALESCE(t.col_c)))))
 )) as checksum FROM (
   SELECT col_a, col_b, col_c FROM `table`
-	WHERE id > #{max_id_from_last_batch}
+	WHERE id > @max_id_from_last_batch
 	LIMIT 10000 
 ) t
 ```
@@ -167,9 +167,9 @@ SELECT max(id) as max_id,
   SUM(UNIX_TIMESTAMP(updated_at)) as checksum
 FROM `table` WHERE id < (
   SELECT id FROM `table`
-	WHERE id > #{max_id_from_last_batch}
+	WHERE id > @max_id_from_last_batch
 	LIMIT 1 OFFSET 10000
-) AND id > #{max_id_from_last_batch}
+) AND id > @max_id_from_last_batch
 ```
 
 Let's take inventory:
@@ -204,9 +204,9 @@ WHERE id < (
   SELECT id
 	FROM `table`
 	FORCE INDEX (`index_table_id`)
-	WHERE id > #{max_id_from_last_batch}
+	WHERE id > @max_id_from_last_batch
   LIMIT 1 OFFSET 10000
-)  AND id > #{max_id_from_last_batch}
+)  AND id > @max_id_from_last_batch
 ```
 
  ![](https://buttondown.s3.us-west-2.amazonaws.com/images/4852b7f2-f211-4ac2-b5d7-3633b594562a.png) 
