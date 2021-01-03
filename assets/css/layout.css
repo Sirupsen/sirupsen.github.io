@@ -65,7 +65,7 @@ a:visited {
 }
 
 .sidebar > section {
-  position: fixed;
+  position: absolute;
   width: inherit;
 }
 
