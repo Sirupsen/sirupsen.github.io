@@ -8,7 +8,6 @@
     <p>
     {{ if .Date }}
       {{ .Date.Format "Jan 2006"}}
-
       {{ if .Params.updated_at }}
           revised {{ .Params.updated_at }}
       {{ end }}
