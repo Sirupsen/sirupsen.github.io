@@ -1,3 +1,9 @@
+{{ define "header" }}
+  <meta name="description" content="Personal website and blog of Simon Hørup
+              Eskildsen about napkin math, computers, books, ideas, and whatever
+              else interests me.">
+{{ end }}
+
 {{ define "main" }}
 <ul id="posts" class="twelve columns offset-by-four">
   {{- $regular := where .Site.RegularPages.ByPublishDate.Reverse "Section" "post" }}
