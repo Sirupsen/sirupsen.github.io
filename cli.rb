@@ -1,12 +1,40 @@
-require "thor"
+require 'thor'
 require 'uri'
 require 'json'
 require 'net/http'
 require 'pp'
-
+require 'pathname'
 require 'byebug'
 
+# CLI for managing blog
 class Sirupsen < Thor
+  desc 'images', 'Localize images'
+  def images
+    i = 0
+    Dir['content/**/*.md'].each do |path|
+      body = File.read(path)
+      paths = body.scan(/\!\[.*\]\((.+)\)/).flatten
+      external_images = paths.select { |path|
+        path.start_with?("https://") && path =~ /\.(jpg|jpeg|png|gif)$/i
+      }
+
+      external_images.each do |image_path|
+        image_name = Pathname.new(image_path).basename.to_s
+        new_path = "./static/static/images/#{image_name}"
+
+        unless File.exist?(new_path)
+          puts "Downloading #{image_path}.."
+          system("curl #{image_path} -o #{new_path}")
+        end
+
+        url_path = "/static/images/#{image_name}"
+        body.sub!(image_path, url_path)
+      end
+
+      File.open(path, 'w') { |f| f.write(body) }
+    end
+  end
+
   desc "buttondown", "Download buttondown emails"
   def buttondown(name = nil)
     json = `curl -s -H "Authorization: Token #{ENV['BUTTONDOWN_TOKEN']}" https:///api.buttondown.email/v1/emails`

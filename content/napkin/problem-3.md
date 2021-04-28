@@ -13,7 +13,7 @@ You are considering how you might implement a set-membership service. Your use-c
 
 Before getting fancy, you'd like to examine whether the simplest possible algorithm would be sufficiently fast: store, for each attribute, a list of all product ids for that attribute (see drawing below). Each query to your service will take the form: `shoe AND black AND size-10 AND brand-x`. To serve the query, you find the intersection (i.e. product ids that match in all terms) between all the attributes. This should return the product ids for all products that match that condition. In the case of the drawing below, only P3 (of those visible) matches those conditions.
 
-![Picture illustrating the attributes and product ids.](https://gallery.tinyletterapp.com/6285c917bb5e97f61e87a98c4e93442d8cfe38a6/images/7dfa1786-d88e-41bd-b336-30a9092db882.png) 
+![Picture illustrating the attributes and product ids.](/static/images/7dfa1786-d88e-41bd-b336-30a9092db882.png) 
 
 The largest merchants have 1,000,000 different products. Each product will be represented in this naive data-structure as a 64-bit integer. While simply shown as a list here, you can assume that we can perform the intersections between rows efficiently in O(n) operations. In other words, in the worst case you have to read all the integers for each attribute only once per term in the query. We could implement this in a variety of ways, but the point of the back-of-the-envelope calculation is to not get lost in the weeds of implementation too early. 
   

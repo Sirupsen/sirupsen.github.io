@@ -5,7 +5,7 @@ title: "Napkin Problem 14: Using checksums to verify syncing 100M database recor
 
 A common problem you've almost certainly faced is to sync two datastores. This problem comes up in numerous shapes and forms: Receiving webhooks and writing them into your datastore, maintaining a materialized view, making sure a cache reflects reality, ensure documents make it from your source of truth to a search index, or your data from your transactional store to your data lake or column store.
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/8b99afab-9ae3-47cf-8703-f465aaec1473.png) 
+ ![](/static/images/8b99afab-9ae3-47cf-8703-f465aaec1473.png) 
 
 If you've built such a system, you've almost certainly seen B drift out of sync. Building a completely reliable syncing mechanism is difficult, but perhaps we can build a checksumming mechanism to check if the two datastores are equal in a few seconds?
 
@@ -52,7 +52,7 @@ We'd then expect each batch to take roughly ~200ms.  This would bring our theore
 
 To test our hypothesis against reality, I implemented this to [run locally for the first 100 of the 10,000 batches][13]. In this local implementation, we won't incur the network transfer overhead (we could've done this with [Toxiproxy][14]). Without the network overhead, we expect a query time in the 100ms ballpark. Running [the script][13], I get the following plot:
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/dfef5830-f658-4268-b655-ec23e64ce90c.png)
+![](/static/images/dfef5830-f658-4268-b655-ec23e64ce90c.png)
 
 Ugh. The real performance is pretty far from our napkin math lower bound estimate. What's going on here?
 
@@ -73,7 +73,7 @@ ORDER BY id ASC
 LIMIT 10000;
 ```
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/47a71e04-2c3d-48e6-a7de-c2240d1ac26f.png) 
+![](/static/images/47a71e04-2c3d-48e6-a7de-c2240d1ac26f.png) 
 
 It's better, but just not by enough. It just delays the inevitable scanning of lots of data to find these limits. If we interpolate how long this'd take for 10,000 batches to process our 100M records, we're still talking on the **order of 14 hours**. The 128x speedup doesn't carry through, because it only applies to the MySQL part. Network transfer is still a large portion of the total time!
 
@@ -104,7 +104,7 @@ LIMIT 10000;
 
 This curbed the linear growth!
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/6b0263d5-c59f-4127-a573-6b06d615c195.png) 
+![](/static/images/6b0263d5-c59f-4127-a573-6b06d615c195.png) 
  
 Now MySQL can use its efficient primary key index to do [~6 SSD seeks][7] on `id` and then scan forward. This means we only process and serialize 10 MiB, putting our napkin math consistently around 100ms per batch as in the original estimate in iteration 1. That means this solution should **finish in about half an hour!** However, we learned in the previous iteration that we are constrained by only taking 10% of the database's capacity, so as calculated from iteration 3, we're back at 2 hours..
 
@@ -146,7 +146,7 @@ SELECT max(id) as max_id, MD5(CONCAT(
 
 We seem to match our napkin math well:
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/4c051bd7-ce00-4b60-ab50-3374366e4a71.png) 
+![](/static/images/4c051bd7-ce00-4b60-ab50-3374366e4a71.png) 
 
 This is the place to stop if you want to err on the side of safety. This is how we [verify the integrity when we move shops between shards at Shopify][15], which is what this approach is inspired by. However, to push performance further we need to get rid of some of this inline aggregation and hashing which eats up all our performance budget. At 50ms/batch, we're still at **~10 minutes to complete the checksumming of 100M records**.
 
@@ -181,11 +181,11 @@ Let's take inventory:
 
 In theory, this query should take milliseconds! In reality, there's overhead involved, and we can't assume in MySQL that reads are completely sequential as [fragmentation occurs][2] on indexes and the primary key.
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/d9518021-e556-466e-b9aa-5e2f50351ae2.png) 
+ ![](/static/images/d9518021-e556-466e-b9aa-5e2f50351ae2.png) 
 
 Without the first iteration:
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/917cb97e-2dd5-47ab-96bc-f612abece5f5.png) 
+ ![](/static/images/917cb97e-2dd5-47ab-96bc-f612abece5f5.png) 
 
 What's going on? We were expecting single-digit milliseconds, but we're seeing 20ms per batch! Something is wrong.  **20ms per batch still means our total checksumming time is 3 min.** We've got more work to do.
 
@@ -209,11 +209,11 @@ WHERE id < (
 )  AND id > @max_id_from_last_batch
 ```
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/4852b7f2-f211-4ac2-b5d7-3633b594562a.png) 
+ ![](/static/images/4852b7f2-f211-4ac2-b5d7-3633b594562a.png) 
 
 Nice, that's quite a bit faster, let's remove the previous iterations to make it a little easier to see the graphs we care about now:
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/fe4783ed-9ba2-4580-967a-e9958bc89856.png) 
+ ![](/static/images/fe4783ed-9ba2-4580-967a-e9958bc89856.png) 
 
 5ms per batch is close to the theoretical floor we established in iteration 6! To checksum our full 100M records, this would take 50 seconds. We aren't going to get much better than this as far as I can tell without modifying MySQL or pre-computing the checksums with e.g. triggers.
 

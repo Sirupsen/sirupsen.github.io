@@ -23,6 +23,6 @@ _Solution to this problem is [available in the next edition](/napkin/problem-5/)
 
 You can read the problem in the archive, [here](https://buttondown.email/computer-napkins/archive/16a42790-e498-4804-8e17-769ff3a30d34).
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/2042e909-962a-48d6-b1e5-a7e03c6f7092.png)  
+ ![](/static/images/2042e909-962a-48d6-b1e5-a7e03c6f7092.png)  
 
 We have 4 bitmaps (one per condition) of `10^6` product ids, each of 64 bits. That's `4 * 10^6 * 64 bits = 32 Mb`. Would this be in memory or on SSDs? Well, let's assume the largest merchants have 10^6 products and 10^3 attributes, that means a total of `10^6 * 10^3 * 64 bits = 8Gb`. That'd cost us about $8 in memory, or about $1 to store on disk. In terms of performance, this is nicely sequential access. For memory, `32 mb * 100us/mb = 3.2 ms`. For SSD (about 10x cheaper, and 10x slower than memory), 320 ms. 300 ms is way too high, but 3 ms is acceptable. $8 is not crazy, given that this would be the absolute largest merchant we have. If cost becomes an issue, we could likely employ good caching since 300 ms is too high for steady-state, but not for the occasional cache-miss.

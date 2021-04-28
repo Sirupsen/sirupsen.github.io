@@ -47,7 +47,7 @@ prior to our session store outage! Unless you're 50x over-provisioned (not a
 great idea), your workers are all busy waiting for the 5s timeout. The queue
 behind the workers slowly filling up...
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/5c6d3d44-9b57-4b75-9f00-44dea022b535.png) 
+![](/static/images/5c6d3d44-9b57-4b75-9f00-44dea022b535.png) 
 
 What can we do about this? We could reduce the timeout, which would be a good idea, but it only changes the shape of the problem, it doesn't eliminate it. But we can implement a circuit breaker! The idea of the
 circuit breaker is that if we've seen a timeout (or error of any other kind we
@@ -101,7 +101,7 @@ illustrated with a drawing. Note, I've compressed the timeout requests a bit
 here (this is not for scale) to fit some 'normal' (blue) requests after the
 circuits open:
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/4f78974a-657c-48be-8e1c-235b21fb23f5.png) 
+![](/static/images/4f78974a-657c-48be-8e1c-235b21fb23f5.png) 
 
 After the circuits have all opened, we're golden! Back to normal despite the
 slow resource! The trouble comes when our 15 seconds of open circuit have
@@ -164,7 +164,7 @@ heavily over-provisioned, I can almost guarantee you that your circuit breaker
 is configured wrong. Instead of re-hashing the post, I'd rather send you to [read
 it][2] and leave you with this equation as a teaser. If you've ever put a circuit breaker in production, you need to read that post immediately, otherwise you haven't actually put a _working_ circuit breaker in production.
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/81f5ee49-9539-4235-8091-54f3ae34170b.png) 
+ ![](/static/images/81f5ee49-9539-4235-8091-54f3ae34170b.png) 
 
 
 Hope you enjoyed this post on resiliency napkin math. Until next time!

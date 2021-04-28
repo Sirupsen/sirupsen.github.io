@@ -31,7 +31,7 @@ your memory on that first! This is one of my favourite problems in the newslette
 so far, so I highly recommend working through it -- even if you're just doing it
 with my answer below.
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/ba039ecb-9a11-4e32-b495-fa90f6caef4c.png)
+![](/static/images/ba039ecb-9a11-4e32-b495-fa90f6caef4c.png)
 
 **(1) When each 16 KiB database page has only 1 relevant row per page, what is the
 query performance (with a `LIMIT 100`)?**

@@ -40,7 +40,7 @@ They would never be relevant to `shop_id = 13`. If we are _really_ unlucky, ther
 only 1 product per page / disk read! Each page, we'll assume, is 16 KiB (the
 default in e.g. MySQL). In the worst case, we could load 100 * 16 KiB!
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/ba039ecb-9a11-4e32-b495-fa90f6caef4c.png) 
+![](/static/images/ba039ecb-9a11-4e32-b495-fa90f6caef4c.png) 
 
 (1) What is the performance of the query in the worst-case, where we load only one
 product per page?

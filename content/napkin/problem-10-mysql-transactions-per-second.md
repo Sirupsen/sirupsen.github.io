@@ -39,7 +39,7 @@ proceed to work with MySQL as it's the one I know best):
 4. MySQL returns `OK` to the client.
 5. MySQL eventually calls `fsync(2)` to ensure InnoDB commits the page to disk.
 
-![Napkin_10](https://user-images.githubusercontent.com/97400/87759326-21adeb00-c7dc-11ea-89c7-559ca11530e8.png)
+![Napkin_10](/static/images/87759326-21adeb00-c7dc-11ea-89c7-559ca11530e8.png)
 
 In the event of power-loss at any of these points, the behaviour can be defined
 without nasty surprises, upholding our dear ACID-compliance.
@@ -339,7 +339,7 @@ index.](https://sirupsen.com/napkin/problem-9/) This data-structure is what's
 behind full-text search, and the way the documents are packed works well for set
 intersections.
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/66641ef5-efe4-440a-a616-0d30310e7540.png)
+![](/static/images/66641ef5-efe4-440a-a616-0d30310e7540.png)
 
 **(A) How long do you estimate it’d take to get the ids for `title AND see` with 2
 million ids for title, and 1 million for see?**

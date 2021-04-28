@@ -21,7 +21,7 @@ Checksumming against databases isn't terribly common, but can be quite useful fo
 
 We'll imagine a slightly different scenario. We have a client (web browser with local storage, or mobile) with state stored locally from `table`. They've been lucky enough to be offline for a few hours, and is now coming back online. They're issuing a sync to get the newest data. This client has offline-capabilities, so our user was able to use the client while on their offline journey. For simplicity, we imagine they haven't made any changes locally.
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/faa046d0-cb70-4852-ae36-4a728236ae6a.png) 
+ ![](/static/images/faa046d0-cb70-4852-ae36-4a728236ae6a.png) 
 
 The query behind an API might look like this (in reality, the query would look more like [this](https://www.usenix.org/sites/default/files/conference/protected-files/srecon19emea_slides_weingarten.pdf#page=62)):
 
@@ -47,7 +47,7 @@ If you find this problem interesting, I'd encourage you to watch [this video][jl
 
 In the [last problem](https://sirupsen.com/napkin/problem-7/) we looked at revision history (click it for more detail). More specifically, we looked at building revision history on top of an existing relational database with a simple composite primary key design: `(id, version)` with a full duplication of the row each time it changes. The only thing you knew was that the table was updating roughly 10 times per second.
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/e93e3c58-0b13-4d2b-bd8d-b08beae30caf.png)
+![](/static/images/e93e3c58-0b13-4d2b-bd8d-b08beae30caf.png)
 
 **(a) How much extra storage space do you anticipate this simple scheme would require after a month? A year? What would this cost on a standard cloud provider?**
 

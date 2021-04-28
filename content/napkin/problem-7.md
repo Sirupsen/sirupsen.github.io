@@ -27,7 +27,7 @@ It doesn't strike me as terribly unlikely that years from now, as computing cost
 
 Let's try to analyze what it would look like to get revision history on top of a standard SQL database. As we always do, we'll start by analyzing the simplest solution. Instead of mutating our records in place, our changes will always _copy_ the entire row, increment a `version_number` on the record (which is part of the primary key), as well as an `updated_at` column. Let's call the table we're operating on `products`. I'll put down one assumption: we're seeing about 10 updates per second. Then I'll leave you to form the rest of the assumptions (most of napkin math is about forming assumptions).
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/e93e3c58-0b13-4d2b-bd8d-b08beae30caf.png) 
+ ![](/static/images/e93e3c58-0b13-4d2b-bd8d-b08beae30caf.png) 
 
 (a) How much extra storage space do you anticipate this simple scheme would require after a month? A year? What would this cost on a standard cloud provider?
 

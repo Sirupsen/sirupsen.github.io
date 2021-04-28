@@ -10,7 +10,7 @@ welcome everyone!
 For today's edition: Have you ever wondered how recommendations work on a site
 like Amazon or Netflix?
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/a1f1f9c3-be46-4f82-b1f8-32f24e736446.jpeg) 
+ ![](/static/images/a1f1f9c3-be46-4f82-b1f8-32f24e736446.jpeg) 
 
 First we need to define similarity/relatedness. There's many ways to do this. We
 could figure out similarity by having a human label the data for what's relevant
@@ -30,7 +30,7 @@ In the example below, User 3 looks similar to User 1, so we can infer that they
 _might_ like Item D too. In reality, the more columns (items) we can use to
 compare, the better results.
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/64eda434-833b-4e6b-b7e0-9084ebd0a52e.png) 
+ ![](/static/images/64eda434-833b-4e6b-b7e0-9084ebd0a52e.png) 
 
 Based on this, we can design a simple algorithm for powering our
 recommendations! With `N` items and `M` users, we can create this matrix of `M x
@@ -101,7 +101,7 @@ people bought both item 4 and item 1, which in comparison to others means that
 it might be a great idea to show people buying item 4 to consider item 1, or
 vice-versa!
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/49676787-b801-4066-aa59-f6a28ee80d8d.png) 
+ ![](/static/images/49676787-b801-4066-aa59-f6a28ee80d8d.png) 
 
 This algorithm has complexity even _worse_ than the previous one, because worst
 case we have to look at each item for each item for each customer `O(N^2 * M)`.

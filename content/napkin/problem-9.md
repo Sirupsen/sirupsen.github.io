@@ -37,7 +37,7 @@ using the inverted index as its primary data-structure, uses JSON and not SQL.
 
 The inverted index might look something like this:
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/66641ef5-efe4-440a-a616-0d30310e7540.png) 
+![](/static/images/66641ef5-efe4-440a-a616-0d30310e7540.png) 
 
 If we wanted to answer a query to find all documents that include both the words
 `title` and `see`, `query='title AND see'`, we'd need to do an intersection of
@@ -77,7 +77,7 @@ For 100,000 records, that'll in reality return us 100,000 hashes. But, let's
 assume that the hashing function is an aggregate function without confusing with
 very specific syntax (you can see who to _actually_ do it [here][2].
 
-![](https://buttondown.s3.us-west-2.amazonaws.com/images/faa046d0-cb70-4852-ae36-4a728236ae6a.png)
+![](/static/images/faa046d0-cb70-4852-ae36-4a728236ae6a.png)
 
 **(a) How much time would you expect the server-side query to take for 100,000
 records that the client might have synced? Will it have different performance
@@ -165,7 +165,7 @@ answer to the query we discussed above.
 
 The best way to understand a Merkle tree is to study the drawing below a little:
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/2f5ff1a5-d6c5-4b38-aa20-c1d82883328d.png) 
+ ![](/static/images/2f5ff1a5-d6c5-4b38-aa20-c1d82883328d.png) 
 
 In the drawing I show a MySQL query to generate an equivalent node. It's likely
 not how we'd generate the data-structure in production, but it illustrates its
@@ -183,7 +183,7 @@ data-structure somehow. How would they efficiently sync? Let's draw up a merkle
 tree and data table where one row is different on the server (we'll make it
 slightly less verbose than the last):
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/4a216af8-61be-496b-9332-b5f9170b6714.png) 
+ ![](/static/images/4a216af8-61be-496b-9332-b5f9170b6714.png) 
 
 Notice how the parents all change when a single record changes. If the server
 and client only exchange their merkle trees, they'd be able to do a simple walk

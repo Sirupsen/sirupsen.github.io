@@ -52,7 +52,7 @@ line in your first shot. I challenge you to. You have to get to know the bull
 and its characteristics. You start by drawing a full bull, and then slowly you
 take the fluff away until there's nothing left to take away.
 
-![](https://i.imgur.com/n5FwomJ.jpg)
+![](/static/images/n5FwomJ.jpg)
 
 This is how we should design software. Realize that when the test pass, you've
 only managed to draw the first bull. Only a few people go through the ten

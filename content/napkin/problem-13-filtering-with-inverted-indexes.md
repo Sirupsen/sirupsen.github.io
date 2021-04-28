@@ -24,7 +24,7 @@ Why would we want to use a search engine to filter data? Because search as a pro
 
 The inverted index is best illustrated through a simple drawing:
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/14930fea-d1c1-4b03-b975-0b58431ce592.png) 
+ ![](/static/images/14930fea-d1c1-4b03-b975-0b58431ce592.png) 
  
 In our inverted index, each attribute (color, type, activity, ..) maps to a list of product ids that have that attribute. We can create a filter for `blue`, `summer`, and `sneakers` by finding the intersection of product ids that match `blue`, `summer`, and `sneakers` (ids that are present for all terms).
 
@@ -34,7 +34,7 @@ Let's assume the product ids are stored each as an uncompressed 64 bit integer i
 
 Now, does this scale linearly? Including more attributes will mean scanning more memory. E.g. 8 attributes we'd expect to scan ~`10mb * 8 = 80mb` of memory, which should take ~`0.1ms * 80 = 8ms`. However, in reality this takes `30-60ms`. This approaches our napkin math being an order of magnitude off. Most likely this is when we have exhausted the CPU L3 cache, and have to cycle more into main memory. We hit a similar boundary from 3 to 4 attributes. It might also suggest there's room for optimization in Lucene.
 
- ![](https://buttondown.s3.us-west-2.amazonaws.com/images/1b9cb6e5-ca15-4a51-9acb-ea83d1facbba.png) 
+ ![](/static/images/1b9cb6e5-ca15-4a51-9acb-ea83d1facbba.png) 
 
 Another interesting to note is that if we look at the inverted index file for our problem, it's roughly ~261mb.  Won't bore you with the calculation here, but given [the implementation][2] this means that we can estimate that each product id takes [up ~6.3 bits][4]. This is _much_ smaller than the 64 bits per product id we estimated. The JVM overhead, however, likely makes up for it. Additionally, in Lucene doesn't just store the product ids, but also various other meta-data along with the product ids. 
 
